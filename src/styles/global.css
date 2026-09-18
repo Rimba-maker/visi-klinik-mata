@@ -135,3 +135,13 @@ h1 em, h2 em { font-style: normal; color: var(--brass); }
   @keyframes settle { from { scale: 1.18; } to { scale: 1; } }
 }
 
+/* ─── Navbar ─── */
+.nav { position: fixed; inset: 0 0 auto 0; z-index: 100; background: rgba(12,14,54,0.92); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid rgba(201,168,106,0.25); }
+.nav__in { max-width: 1240px; margin-inline: auto; padding: 14px clamp(20px, 4vw, 40px); display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.nav__logo { display: flex; align-items: center; gap: 10px; font: 400 21px/1 var(--display); color: #fff; }
+.nav__logo svg { color: var(--brass); }
+.nav__links { display: flex; gap: 32px; }
+.nav__links a { color: var(--on-dark-mute); font-size: 15px; transition: color .2s; }
+.nav__links a:hover { color: #fff; }
+.nav .btn { padding: 11px 20px; font-size: 15px; }
+
