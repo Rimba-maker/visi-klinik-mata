@@ -55,6 +55,14 @@ const prices = [
   ['OCT scan', 'Rp 600k – 900k', '—'],
 ];
 
+const when = [
+  { t: 'Anak 3–6 Tahun', i: 'Sebelum Masuk Sekolah', d: 'Deteksi mata juling & refraction error sebelum berdampak pada tumbuh kembang anak.', img: 27467920, alt: 'Anak perempuan tersenyum lebar' },
+  { t: 'Usia Sekolah & Remaja', i: 'Setiap 1–2 Tahun', d: 'Terutama jika banyak menggunakan HP/komputer. Monitor myopia progression rutin.', img: 10933119, alt: 'Perempuan muda berkacamata tersenyum' },
+  { t: 'Dewasa 20–40 Tahun', i: 'Setiap 2 Tahun', d: 'Setiap tahun jika pakai kacamata/lensa kontak. Cegah computer vision syndrome.', img: 6345331, alt: 'Pria bekerja di depan laptop sambil memegang wajah' },
+  { t: 'Lansia 40+ Tahun', i: 'Setiap Tahun', d: 'Risiko presbyopia, katarak, dan glaukoma meningkat signifikan. Deteksi dini kunci penanganan.', img: 5637591, alt: 'Pasangan lansia membaca koran bersama di bangku' },
+  { t: 'Diabetic Patient', i: 'Setiap 6–12 Bulan', d: 'Diabetes adalah faktor risiko utama eye disease. Screening diabetic retinopathy rutin sangat dianjurkan.', img: 5996744, alt: 'Kacamata di atas kartu tes ketajaman penglihatan' },
+];
+
 const lasik = [
   { t: 'PRK', p: 'Rp 12 jt / mata', l: ['Untuk kornea tipis', 'Hasil permanen', 'Recovery 5–7 hari', 'Minus -1 s/d -10'] },
   { t: 'Femto-LASIK', p: 'Rp 15 jt / mata', pop: true, l: ['Wavelight FS200 femtosecond', '100% blade-free', 'Recovery 24–48 jam', 'Minus -1 s/d -10'] },
@@ -373,6 +381,32 @@ const lasik = [
             </ul>
             <p>* Perlu rujukan dari FKTP</p>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── KAPAN PERIKSA ─── -->
+  <section class="sec on-white" aria-label="Kapan sebaiknya periksa mata">
+    <div class="wrap">
+      <div class="head">
+        <h2>Kapan Sebaiknya <em>Periksa Mata?</em></h2>
+        <p class="lede">Deteksi dini menyelamatkan penglihatan — untuk semua usia.</p>
+      </div>
+      <div class="when">
+        {when.map((w) => (
+          <div class="when__it">
+            <Photo id={w.img} w={360} cls="r-circle frame--ring" alt={w.alt} />
+            <h3>{w.t}</h3>
+            <p class="when__int">{w.i}</p>
+            <p>{w.d}</p>
+          </div>
+        ))}
+        <div class="when__it when__it--sos">
+          <div class="when__sos"><i class="ph-bold ph-warning-circle" aria-hidden="true"></i></div>
+          <h3>Tanda Darurat</h3>
+          <p class="when__int">Segera Ke Dokter</p>
+          <p>Penglihatan tiba-tiba kabur, floater banyak baru muncul, flash of light, mata merah hebat — jangan tunda.</p>
         </div>
       </div>
     </div>

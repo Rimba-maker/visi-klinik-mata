@@ -288,3 +288,14 @@ h1 em, h2 em { font-style: normal; color: var(--brass); }
 .bpjs li i { color: var(--indigo); font-size: 18px; flex-shrink: 0; }
 .bpjs p { font-size: 13px; font-style: italic; color: var(--ink-mute); margin-top: 8px; }
 
+/* ─── Kapan periksa ─── */
+.when { display: grid; grid-template-columns: repeat(6, 1fr); gap: 0 28px; position: relative; }
+.when::before { content: ""; position: absolute; left: 0; right: 0; top: 60px; height: 1px; background: var(--line); }
+.when__it { position: relative; text-align: center; }
+.when__it .frame { width: 120px; margin: 0 auto 22px; --rx: 8px; --ry: 8px; }
+.when__sos { width: 120px; height: 120px; margin: 0 auto 22px; border-radius: 50%; border: 1px solid var(--ruby); display: grid; place-content: center; background: var(--white); color: var(--ruby); font-size: 44px; position: relative; z-index: 1; }
+.when__it h3 { font-size: 19px; margin-bottom: 6px; }
+.when__int { font: 600 13px var(--body); color: var(--indigo-deep); margin-bottom: 10px; }
+.when__it p { font-size: 14px; color: var(--ink-mute); line-height: 1.6; }
+.when__it--sos h3, .when__it--sos .when__int { color: var(--ruby); }
+
