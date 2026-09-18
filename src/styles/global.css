@@ -262,9 +262,6 @@ h2 em {
 .r-squircle {
   --r: 28% / 22%;
 }
-.r-capsule {
-  --r: 999px;
-}
 .frame--ring::before {
   content: '';
   position: absolute;
@@ -1561,9 +1558,6 @@ h2 em {
   }
   .foot__bot {
     flex-direction: column;
-  }
-  .btn-lg-m {
-    width: 100%;
   }
 }
 
