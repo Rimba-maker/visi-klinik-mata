@@ -1,5 +1,15 @@
 ---
 // Pexels photo inside a shape frame. `cls` carries shape + placement (r-arch, frame--ring, a-main…).
+interface Props {
+  id: number; // Pexels photo id
+  alt: string; // pass '' only for purely decorative photos
+  w?: number; // requested image width in px
+  cls?: string;
+  pos?: string; // CSS object-position
+  eager?: boolean; // above the fold: load eagerly with high priority
+  tone?: boolean; // indigo duotone
+  almond?: boolean; // eye-shaped clip
+}
 const { id, alt, w = 800, cls = '', pos = 'center', eager = false, tone = false, almond = false } = Astro.props;
 const src = `https://images.pexels.com/photos/${id}/pexels-photo-${id}.jpeg?auto=compress&cs=tinysrgb&w=${w}`;
 ---
