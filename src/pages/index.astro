@@ -2,6 +2,16 @@
 import '../styles/global.css';
 import Photo from '../components/Photo.astro';
 
+const conditions = [
+  { img: 1486641, pos: '50% 50%', t: 'Refraction Errors', l: ['Minus (myopia)', 'Plus (hyperopia)', 'Silinder (astigmatism)', 'Presbyopia (mata tua)'] },
+  { img: 30896215, pos: '50% 50%', t: 'Myopia Control Anak', l: ['Atropine drops', 'Ortho-K lens malam', 'MiSight contact lens'] },
+  { img: 4127849, pos: '50% 50%', t: 'Katarak', l: ['Phacoemulsification', 'Multifokal IOL implant', 'Day-surgery, recovery cepat'] },
+  { img: 34491619, pos: '50% 50%', t: 'Glaukoma', l: ['Early detection (IOP)', 'Medication & surgery', 'Lifetime monitoring'] },
+  { img: 946727, pos: '50% 50%', t: 'Diabetic Retinopathy', l: ['Screening diabetic patient', 'Laser & injection', 'Anti-VEGF therapy'] },
+  { img: 6660871, pos: '50% 30%', t: 'Dry Eye Syndrome', l: ['Computer vision syndrome', 'Meibomian gland dysfunction', 'IPL therapy & punctal plug'] },
+  { img: 8949024, pos: '50% 55%', t: 'Strabismus (Mata Juling)', l: ['Pada anak & dewasa', 'Bedah otot mata', 'Vision therapy'] },
+  { img: 977601, pos: '50% 40%', t: 'Floater & Retinal Detachment', l: ['Posterior vitreous detachment', 'Retinal tear & detachment', 'Vitrectomy surgery'] },
+];
 ---
 <!DOCTYPE html>
 <html lang="id">
@@ -92,6 +102,30 @@ import Photo from '../components/Photo.astro';
       <span class="ins__n">BPJS Kesehatan</span><span class="ins__n">Allianz</span><span class="ins__n">AXA Mandiri</span><span class="ins__n">Cigna</span><span class="ins__n">Mandiri Inhealth</span><span class="ins__n">Prudential</span>
     </div>
   </div>
+
+  <!-- ─── KONDISI ─── -->
+  <section id="kondisi" class="sec on-pearl" aria-label="Kondisi mata yang ditangani">
+    <div class="wrap cond">
+      <div class="cond__art">
+        <Photo id={9929038} w={1000} almond cls="c-almond" alt="Close-up mata biru dengan cahaya lembut" />
+        <Photo id={326536} w={600} cls="c-circle r-circle frame--sticker frame--ring frame--ring-l" alt="Close-up mata dengan iris keemasan" />
+        <Photo id={4117653} w={600} cls="c-oval r-oval frame--sticker" alt="Makro mata dengan iris cokelat oranye" />
+      </div>
+      <div>
+        <h2>Kondisi Mata Yang <em>Kami Tangani</em></h2>
+        <p class="lede">Dari refraksi ringan hingga kondisi retina kompleks — semua dalam satu klinik.</p>
+        <div class="cond__list">
+          {conditions.map((c) => (
+            <div class="cond__item">
+              <Photo id={c.img} w={200} cls="r-circle frame--ring" pos={c.pos} alt="" />
+              <h3>{c.t}</h3>
+              <ul>{c.l.map((x) => <li>{x}</li>)}</ul>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
 
   </main>
 

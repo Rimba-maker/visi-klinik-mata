@@ -181,3 +181,18 @@ h1 em, h2 em { font-style: normal; color: var(--brass); }
 .ins__lbl { font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-mute); }
 .ins__n { font: 400 19px/1 var(--display); color: var(--ink-sec); }
 
+/* ─── Kondisi ─── */
+.cond { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: clamp(40px, 6vw, 96px); align-items: start; }
+.cond__art { position: sticky; top: 100px; aspect-ratio: 1 / 1.25; }
+.cond__art > * { position: absolute; }
+.c-almond { left: 0; top: 0; width: 92%; }
+.c-circle { left: 3%; top: 46%; width: 44%; }
+.c-oval   { right: 0; bottom: 0; width: 42%; aspect-ratio: 3 / 4; }
+.cond h2 { margin-bottom: 18px; }
+.cond__list { display: grid; grid-template-columns: 1fr 1fr; gap: 0 40px; margin-top: 40px; }
+.cond__item { align-content: start; padding: 22px 0; border-top: 1px solid var(--line); display: grid; grid-template-columns: 64px 1fr; gap: 0 18px; }
+.cond__item .frame { grid-row: span 2; width: 60px; --rx: 4px; --ry: 4px; }
+.cond__item h3 { font-size: 20px; margin-bottom: 8px; }
+.cond__item li { font-size: 14.5px; color: var(--ink-mute); line-height: 1.75; }
+.cond__item li::before { content: "— "; color: var(--brass-deep); }
+
