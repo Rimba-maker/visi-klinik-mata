@@ -63,6 +63,12 @@ const when = [
   { t: 'Diabetic Patient', i: 'Setiap 6–12 Bulan', d: 'Diabetes adalah faktor risiko utama eye disease. Screening diabetic retinopathy rutin sangat dianjurkan.', img: 5996744, alt: 'Kacamata di atas kartu tes ketajaman penglihatan' },
 ];
 
+const testi = [
+  { tag: 'Cataract Surgery', q: '"Mama saya 68 tahun, katarak bilateral. Surgery di Visi pakai IOL multifokal, sekarang bisa baca koran tanpa kacamata baca. Tetangga sampai nanya operasi di mana."', by: 'Bu Nina, anak pasien katarak', m: 'N' },
+  { tag: 'Pediatric Ophthalmology', q: '"Anak saya 7 tahun didiagnosis amblyopia (lazy eye). dr. Sari sabar handle anak, kasih plan vision therapy 6 bulan. Hasilnya signifikan dan anak jadi lebih percaya diri."', by: 'Pak Bayu, ayah pasien anak', m: 'B' },
+  { tag: 'Diabetic Retinopathy', q: '"Diabetic 15 tahun, dapat retinopathy stadium 2. Treatment anti-VEGF injection rutin di Visi sudah 2 tahun, kondisi stabil. Senang ada klinik yang treat saya seperti partner, bukan sekadar pasien."', by: 'Pak Bambang, 58 tahun', m: 'B' },
+];
+
 const lasik = [
   { t: 'PRK', p: 'Rp 12 jt / mata', l: ['Untuk kornea tipis', 'Hasil permanen', 'Recovery 5–7 hari', 'Minus -1 s/d -10'] },
   { t: 'Femto-LASIK', p: 'Rp 15 jt / mata', pop: true, l: ['Wavelight FS200 femtosecond', '100% blade-free', 'Recovery 24–48 jam', 'Minus -1 s/d -10'] },
@@ -426,6 +432,28 @@ const lasik = [
         <Photo id={3846022} w={800} cls="g4 r-circle frame--ring" alt="Tangan memegang trial frame lensa untuk pemeriksaan refraksi" />
         <Photo id={5201993} w={900} cls="g5 r-leaf frame--ring" pos="30% 50%" alt="Perempuan memilih kacamata di dinding frame" />
         <Photo id={10113130} w={700} tone cls="g6 r-tab frame--ring" alt="Kacamata di atas permukaan merah muda dengan daun pakis dan jam weker" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── TESTIMONI ─── -->
+  <section class="sec on-navy" aria-label="Testimoni pasien">
+    <div class="wrap">
+      <div class="testi__lead">
+        <Photo id={1047346} w={1000} almond cls="" alt="Close-up mata hitam putih dengan pantulan cahaya" />
+        <div>
+          <p class="testi__q">"Pakai kacamata sejak SMP, sekarang 32 tahun. Akhirnya berani Lasik di Visi. dr. Andreas detail jelasin syarat & risiko. 1 hari recovery, sekarang melihat dunia tanpa kacamata!"</p>
+          <p class="testi__by">— Reza, 32 tahun · <span class="tag" style="margin:0">Post-Femto LASIK</span></p>
+        </div>
+      </div>
+      <div class="testi__grid">
+        {testi.map((t) => (
+          <figure class="testi__it">
+            <div class="mono" aria-hidden="true">{t.m}</div>
+            <blockquote><p>{t.q}</p></blockquote>
+            <figcaption><span class="tag">{t.tag}</span><small>{t.by}</small></figcaption>
+          </figure>
+        ))}
       </div>
     </div>
   </section>
