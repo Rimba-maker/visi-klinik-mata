@@ -257,3 +257,19 @@ h1 em, h2 em { font-style: normal; color: var(--brass); }
 .tech__brand { font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--brass-deep); font-weight: 600; }
 .tech__row p { grid-column: 2 / 4; font-size: 14.5px; color: var(--ink-mute); line-height: 1.65; }
 
+/* ─── Optical ─── */
+.opt { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(40px, 6vw, 96px); align-items: center; }
+.opt h2 { margin-bottom: 18px; }
+.opt__list { margin-top: 40px; }
+.opt__it { padding: 24px 0; border-top: 1px solid rgba(255,255,255,0.22); display: grid; grid-template-columns: 44px 1fr; gap: 0 16px; }
+.opt__it i { font-size: 28px; color: var(--indigo-pale); grid-row: span 2; }
+.opt__it h3 { font-size: 22px; margin-bottom: 8px; }
+.opt__it li { font-size: 15px; color: rgba(255,255,255,0.86); line-height: 1.75; }
+.opt__it li::before { content: "— "; color: var(--indigo-pale); }
+.opt__art { position: relative; aspect-ratio: 1 / 1.05; }
+.opt__art > * { position: absolute; }
+.o-arch { right: 4%; top: 0; width: 62%; height: 86%; }
+.o-circle { left: 0; top: 30%; width: 42%; }
+.o-squircle { left: 12%; bottom: 0; width: 36%; aspect-ratio: 1; }
+.o-oval { right: 0; bottom: 2%; width: 30%; aspect-ratio: 3 / 4; }
+
