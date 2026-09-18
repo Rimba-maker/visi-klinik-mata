@@ -3,13 +3,27 @@
 const { id, alt, w = 800, cls = '', pos = 'center', eager = false, tone = false, almond = false } = Astro.props;
 const src = `https://images.pexels.com/photos/${id}/pexels-photo-${id}.jpeg?auto=compress&cs=tinysrgb&w=${w}`;
 ---
+
 <div class:list={['frame', almond && 'frame--almond', cls]}>
   {almond && (
     <svg class="almond-ring" viewBox="0 0 100 57" preserveAspectRatio="none" aria-hidden="true">
-      <path d="M0,28.5 C20,1 80,1 100,28.5 C80,56 20,56 0,28.5Z" fill="none" stroke="currentColor" stroke-width="1" vector-effect="non-scaling-stroke" />
+      <path
+        d="M0,28.5 C20,1 80,1 100,28.5 C80,56 20,56 0,28.5Z"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1"
+        vector-effect="non-scaling-stroke"
+      />
     </svg>
   )}
   <div class:list={['sh', almond && 'sh--almond', tone && 'tone']}>
-    <img src={src} alt={alt} loading={eager ? 'eager' : 'lazy'} fetchpriority={eager ? 'high' : undefined} decoding="async" style={`object-position:${pos}`} />
+    <img
+      src={src}
+      alt={alt}
+      loading={eager ? 'eager' : 'lazy'}
+      fetchpriority={eager ? 'high' : undefined}
+      decoding="async"
+      style={`object-position:${pos}`}
+    />
   </div>
 </div>
