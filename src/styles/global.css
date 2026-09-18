@@ -205,3 +205,30 @@ h1 em, h2 em { font-style: normal; color: var(--brass); }
 .svc__price { margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--line); font: 500 15px var(--body); color: var(--indigo-deep); }
 .svc__it:nth-child(even) { transform: translateY(28px); }
 
+/* ─── Lasik ─── */
+.lasik { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: clamp(40px, 6vw, 96px); align-items: center; }
+.lasik__art { position: relative; aspect-ratio: 1; max-width: 520px; width: 100%; }
+.lasik__art > * { position: absolute; }
+.l-rings { inset: -9%; width: 118%; height: 118%; color: var(--brass); opacity: 0.4; }
+.l-main { inset: 6%; }
+.l-small { right: -4%; bottom: 2%; width: 36%; aspect-ratio: 1; }
+.tier { display: grid; grid-template-columns: 0.7fr 1.3fr; gap: 8px 32px; padding: 30px 0; border-top: 1px solid var(--line-dark); position: relative; }
+.tier:last-of-type { border-bottom: 1px solid var(--line-dark); }
+.tier h3 { font-size: 34px; }
+.tier__price { font: 400 22px var(--display); color: var(--brass); margin-top: 6px; }
+.tier li { font-size: 15px; color: var(--on-dark-mute); line-height: 1.9; display: flex; gap: 10px; align-items: baseline; }
+.tier li i { color: var(--brass); font-size: 14px; }
+.tier__pop { position: absolute; top: -13px; left: 0; background: var(--brass); color: var(--navy-950); font: 600 11px/1 var(--body); letter-spacing: 0.08em; text-transform: uppercase; padding: 6px 12px; border-radius: 999px; }
+.diopter { margin-top: 40px; }
+.diopter__cap { font-size: 13px; color: var(--on-dark-mute); margin-bottom: 10px; }
+.diopter__scale { display: flex; justify-content: space-between; border-top: 1px solid var(--brass); }
+.diopter__scale span { position: relative; padding-top: 14px; font: 400 15px var(--display); color: var(--brass); }
+.diopter__scale span::before { content: ""; position: absolute; top: 0; left: 50%; width: 1px; height: 8px; background: var(--brass); }
+.lasik__foot { margin-top: clamp(48px, 6vw, 80px); display: grid; grid-template-columns: 1fr auto; gap: 32px; align-items: center; background: rgba(255,255,255,0.05); border: 1px solid var(--line-dark); border-radius: 16px; padding: 36px 40px; }
+.lasik__foot h3 { margin-bottom: 14px; }
+.lasik__foot ul { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 32px; }
+.lasik__foot li { display: flex; gap: 10px; font-size: 15px; color: var(--on-dark-mute); }
+.lasik__foot li i { color: var(--brass); font-size: 18px; flex-shrink: 0; }
+.lasik__cta { text-align: center; }
+.lasik__cta p { font-size: 13px; color: var(--on-dark-mute); margin-top: 10px; }
+

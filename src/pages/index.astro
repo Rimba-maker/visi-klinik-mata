@@ -23,6 +23,12 @@ const services = [
   { t: 'Dry Eye Clinic', l: ['LipiView assessment', 'IPL therapy', 'Punctal plug'], p: 'Mulai Rp 1 jt', img: 8867225, r: 'r-leaf', alt: 'Pekerja kantoran mengusap mata yang lelah' },
   { t: 'Optical Shop In-House', l: ['Frame premium & affordable', 'Lensa Zeiss, Essilor, Hoya', 'Contact lens fitting'], p: 'One-stop solution', img: 5766564, r: 'r-squircle', alt: 'Rak dinding berisi ratusan frame kacamata' },
 ];
+
+const lasik = [
+  { t: 'PRK', p: 'Rp 12 jt / mata', l: ['Untuk kornea tipis', 'Hasil permanen', 'Recovery 5–7 hari', 'Minus -1 s/d -10'] },
+  { t: 'Femto-LASIK', p: 'Rp 15 jt / mata', pop: true, l: ['Wavelight FS200 femtosecond', '100% blade-free', 'Recovery 24–48 jam', 'Minus -1 s/d -10'] },
+  { t: 'SMILE', p: 'Rp 25 jt / mata', l: ['Small incision, minimal invasif', 'Recovery lebih cepat', 'Cocok lifestyle aktif', 'Minus -1 s/d -10'] },
+];
 ---
 <!DOCTYPE html>
 <html lang="id">
@@ -154,6 +160,57 @@ const services = [
             <p class="svc__price num">{s.p}</p>
           </article>
         ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── LASIK ─── -->
+  <section id="lasik" class="sec on-navy" aria-label="Lasik & refractive surgery">
+    <div class="wrap">
+      <div class="head">
+        <h2>Bebas Kacamata <em>Dengan Lasik</em></h2>
+        <p class="lede">Teknologi Wavelight FS200 — blade-free, akurasi tinggi, recovery cepat.</p>
+      </div>
+      <div class="lasik">
+        <div class="lasik__art">
+          <svg class="l-rings" viewBox="0 0 400 400" fill="none" stroke="currentColor" aria-hidden="true"><circle cx="200" cy="200" r="198"/><circle cx="200" cy="200" r="178"/><circle cx="200" cy="200" r="158"/></svg>
+          <Photo id={16571732} w={900} cls="l-main r-circle frame--sticker" pos="45% 50%" alt="Ruang tindakan klinik modern dengan tempat tidur pasien dan peralatan" />
+          <Photo id={7580252} w={500} cls="l-small r-circle frame--sticker" pos="70% 40%" alt="Dokter memeriksa mata pasien dengan penlight" />
+        </div>
+        <div>
+          {lasik.map((x) => (
+            <div class="tier">
+              {x.pop && <span class="tier__pop">Paling Populer</span>}
+              <div>
+                <h3>{x.t}</h3>
+                <p class="tier__price num">{x.p}</p>
+              </div>
+              <ul>{x.l.map((y) => <li><i class="ph-bold ph-check" aria-hidden="true"></i>{y}</li>)}</ul>
+            </div>
+          ))}
+          <div class="diopter" role="img" aria-label="Rentang koreksi minus 1 sampai minus 10 dioptri">
+            <p class="diopter__cap">Rentang minus yang dapat dikoreksi (dioptri)</p>
+            <div class="diopter__scale num" aria-hidden="true">
+              {['-1','-2','-3','-4','-5','-6','-7','-8','-9','-10'].map((d) => <span>{d}</span>)}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lasik__foot">
+        <div>
+          <h3>Syarat Lasik</h3>
+          <ul>
+            <li><i class="ph-bold ph-check-circle" aria-hidden="true"></i>Usia minimal 18 tahun</li>
+            <li><i class="ph-bold ph-check-circle" aria-hidden="true"></i>Refraksi stabil 1 tahun terakhir</li>
+            <li><i class="ph-bold ph-check-circle" aria-hidden="true"></i>Tidak hamil atau menyusui</li>
+            <li><i class="ph-bold ph-check-circle" aria-hidden="true"></i>Tidak ada kondisi kornea kontradiksi</li>
+          </ul>
+        </div>
+        <div class="lasik__cta">
+          <a href="#booking" class="btn btn-primary">Konsultasi Lasik Gratis</a>
+          <p>Termasuk Lasik eligibility test tanpa biaya</p>
+        </div>
       </div>
     </div>
   </section>
