@@ -175,3 +175,9 @@ h1 em, h2 em { font-style: normal; color: var(--brass); }
 .hero__art .a-small > .sh  { --d: .55s; }
 .hero__art .sh img { animation: none; }
 
+/* ─── Insurance strip ─── */
+.ins { background: var(--white); border-bottom: 1px solid var(--line); }
+.ins__in { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 12px 40px; padding-block: 26px; }
+.ins__lbl { font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-mute); }
+.ins__n { font: 400 19px/1 var(--display); color: var(--ink-sec); }
+
