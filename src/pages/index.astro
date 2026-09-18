@@ -43,6 +43,18 @@ const tech = [
   { icon: 'syringe', n: 'Phacoemulsification Unit', b: 'Centurion Alcon', d: 'Surgery katarak presisi tinggi dengan teknologi Intelligent Phaco untuk recovery lebih cepat.' },
 ];
 
+const prices = [
+  ['Pemeriksaan komprehensif', 'Rp 250k – 500k', 'Termasuk konsultasi Sp.M'],
+  ['Konsultasi Sp.M', 'Rp 250k – 400k', 'Per visit'],
+  ['Lasik Femto-LASIK', 'Rp 15 jt / mata', 'Free konsultasi eligibility'],
+  ['Lasik SMILE', 'Rp 25 jt / mata', 'Free konsultasi eligibility'],
+  ['Cataract surgery + IOL monofokal', 'Rp 8 – 12 jt / mata', '—'],
+  ['Cataract surgery + IOL multifokal', 'Rp 15 – 25 jt / mata', '—'],
+  ['Anti-VEGF injection', 'Rp 3 – 6 jt / sesi', '—'],
+  ['Glaukoma surgery', 'Rp 10 – 20 jt', '—'],
+  ['OCT scan', 'Rp 600k – 900k', '—'],
+];
+
 const lasik = [
   { t: 'PRK', p: 'Rp 12 jt / mata', l: ['Untuk kornea tipis', 'Hasil permanen', 'Recovery 5–7 hari', 'Minus -1 s/d -10'] },
   { t: 'Femto-LASIK', p: 'Rp 15 jt / mata', pop: true, l: ['Wavelight FS200 femtosecond', '100% blade-free', 'Recovery 24–48 jam', 'Minus -1 s/d -10'] },
@@ -332,6 +344,36 @@ const lasik = [
         <Photo id={5201992} w={600} cls="o-circle r-circle frame--sticker" alt="Tangan memegang frame kacamata hitam di depan rak frame" />
         <Photo id={25096378} w={500} cls="o-squircle r-squircle frame--sticker" alt="Beberapa kacamata berwarna di atas latar putih" />
         <Photo id={4952482} w={500} cls="o-oval r-oval frame--sticker" alt="Kacamata hitam dengan frame cokelat" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PRICING ─── -->
+  <section class="sec on-pearl" aria-label="Referensi harga">
+    <div class="wrap">
+      <div class="head">
+        <h2>Pricing <em>Reference</em></h2>
+        <p class="lede">Indikatif. Untuk BPJS & asuransi: cek koordinasi langsung dengan tim kami.</p>
+      </div>
+      <div class="price">
+        <table class="ptable">
+          <thead><tr><th>Layanan</th><th>Harga</th><th>Catatan</th></tr></thead>
+          <tbody>
+            {prices.map((p) => <tr><td>{p[0]}</td><td class="p">{p[1]}</td><td class="n">{p[2]}</td></tr>)}
+          </tbody>
+        </table>
+        <div class="price__side">
+          <Photo id={5996744} w={700} cls="r-arch frame--ring" pos="50% 50%" alt="Kacamata di atas kartu tes ketajaman penglihatan" />
+          <div class="bpjs">
+            <h3>Layanan BPJS Kesehatan</h3>
+            <ul>
+              <li><i class="ph-bold ph-check-circle" aria-hidden="true"></i>Pemeriksaan & treatment dasar</li>
+              <li><i class="ph-bold ph-check-circle" aria-hidden="true"></i>Cataract surgery (IOL monofokal standar)</li>
+              <li><i class="ph-bold ph-check-circle" aria-hidden="true"></i>Glaukoma medication (formularium nasional)</li>
+            </ul>
+            <p>* Perlu rujukan dari FKTP</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>

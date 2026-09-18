@@ -273,3 +273,18 @@ h1 em, h2 em { font-style: normal; color: var(--brass); }
 .o-squircle { left: 12%; bottom: 0; width: 36%; aspect-ratio: 1; }
 .o-oval { right: 0; bottom: 2%; width: 30%; aspect-ratio: 3 / 4; }
 
+/* ─── Pricing ─── */
+.price { display: grid; grid-template-columns: 1.25fr 0.75fr; gap: clamp(40px, 6vw, 88px); align-items: start; }
+.ptable { width: 100%; border-collapse: collapse; }
+.ptable th { text-align: left; font: 600 12px var(--body); letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-mute); padding: 0 16px 14px 0; border-bottom: 1px solid var(--ink); }
+.ptable td { padding: 18px 16px 18px 0; border-bottom: 1px solid var(--line); vertical-align: top; font-size: 16px; }
+.ptable .p { font: 400 19px var(--display); color: var(--indigo-deep); white-space: nowrap; font-feature-settings: "tnum"; }
+.ptable .n { font-size: 14px; color: var(--ink-mute); }
+.price__side { position: sticky; top: 100px; }
+.price__side .frame { aspect-ratio: 4 / 5; margin-bottom: 36px; }
+.bpjs { background: var(--white); border-radius: 16px; padding: 28px; }
+.bpjs h3 { font-size: 22px; margin-bottom: 16px; }
+.bpjs li { display: flex; gap: 10px; font-size: 14.5px; color: var(--ink-mute); line-height: 1.5; padding: 6px 0; }
+.bpjs li i { color: var(--indigo); font-size: 18px; flex-shrink: 0; }
+.bpjs p { font-size: 13px; font-style: italic; color: var(--ink-mute); margin-top: 8px; }
+
