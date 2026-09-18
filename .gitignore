@@ -21,7 +21,12 @@ Thumbs.db
 .netlify/
 .vercel/
 
+# Private: internal docs and notes, never published
+# Anything internal (PRD, briefs, drafts) goes in private/
+/private/
+# Product context for AI tooling; it has to stay at the repo root
+/PRODUCT.md
+
 # Local tooling state
 .claude/
-.impeccable/review/
-.impeccable/loop-plan.md
+.impeccable/
