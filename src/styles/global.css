@@ -85,3 +85,53 @@ h1 em, h2 em { font-style: normal; color: var(--brass); }
 .btn-outline:hover { background: var(--indigo-mist); }
 .btn-block { width: 100%; }
 
+/* ─── Photo-shape kit: frame > .sh > img ─── */
+.frame { --r: 999px 999px 22px 22px; --ring: var(--brass); --rx: 16px; --ry: 16px; position: relative; }
+.frame > .sh { position: relative; z-index: 1; width: 100%; height: 100%; overflow: hidden; border-radius: var(--r); background: var(--navy); }
+.sh img { width: 100%; height: 100%; object-fit: cover; transition: transform 1.2s var(--ease); }
+.frame:hover .sh img { transform: scale(1.04); }
+.r-arch    { --r: 999px 999px 22px 22px; }
+.r-tab     { --r: 22px 22px 999px 999px; }
+.r-oval    { --r: 50%; }
+.r-circle  { --r: 50%; aspect-ratio: 1; }
+.r-leaf    { --r: 0 50% 0 50%; }
+.r-squircle{ --r: 28% / 22%; }
+.r-capsule { --r: 999px; }
+.frame--ring::before {
+  content: ""; position: absolute; inset: 0; border: 1px solid var(--ring); border-radius: var(--r);
+  transform: translate(var(--rx), var(--ry)); pointer-events: none;
+}
+.frame--ring-l { --rx: -16px; }
+.frame--sticker > .sh { border: 6px solid var(--sticker, var(--pearl)); box-shadow: var(--sh-lift); }
+.on-navy .frame--sticker, .on-deep .frame--sticker { --sticker: var(--navy-950); }
+.on-navy .frame--sticker > .sh { border-color: var(--navy); }
+.on-indigo .frame--sticker > .sh { border-color: var(--indigo); }
+.on-white .frame--sticker > .sh { border-color: var(--white); }
+
+/* print crop marks */
+.frame--marks::after {
+  content: ""; position: absolute; inset: -14px; pointer-events: none; z-index: 2;
+  --m: linear-gradient(var(--brass), var(--brass));
+  background:
+    var(--m) top left / 14px 1px no-repeat, var(--m) top left / 1px 14px no-repeat,
+    var(--m) top right / 14px 1px no-repeat, var(--m) top right / 1px 14px no-repeat,
+    var(--m) bottom left / 14px 1px no-repeat, var(--m) bottom left / 1px 14px no-repeat,
+    var(--m) bottom right / 14px 1px no-repeat, var(--m) bottom right / 1px 14px no-repeat;
+}
+
+/* almond eye */
+.sh--almond { clip-path: url(#almond); border-radius: 0; aspect-ratio: 1.75; }
+.frame--almond { position: relative; }
+.frame--almond > .sh { border-radius: 0; }
+.almond-ring { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; color: var(--brass); transform: translate(14px, 14px); pointer-events: none; }
+
+/* indigo duotone: unifies an off-palette stock photo with the brand */
+.tone img { filter: grayscale(1) contrast(1.1); }
+.tone::after { content: ""; position: absolute; inset: 0; background: var(--indigo); mix-blend-mode: multiply; opacity: 0.9; pointer-events: none; }
+
+/* scroll-linked settle (progressive; content visible by default) */
+@supports (animation-timeline: view()) {
+  .sh img { animation: settle linear both; animation-timeline: view(); animation-range: entry 0% entry 100%; }
+  @keyframes settle { from { scale: 1.18; } to { scale: 1; } }
+}
+
