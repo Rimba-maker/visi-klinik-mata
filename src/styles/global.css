@@ -63,6 +63,13 @@ a {
 ul {
   list-style: none;
 }
+.icon {
+  display: inline-block;
+  flex-shrink: 0;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.125em;
+}
 ::selection {
   background: var(--brass);
   color: var(--navy-950);
@@ -498,7 +505,7 @@ h2 em {
   line-height: 1.4;
   color: var(--on-dark-mute);
 }
-.assure i {
+.assure .icon {
   color: var(--brass);
   font-size: 20px;
   flex-shrink: 0;
@@ -560,7 +567,7 @@ h2 em {
   box-shadow: var(--sh-lift);
   z-index: 3;
 }
-.a-badge i {
+.a-badge .icon {
   font-size: 26px;
   color: var(--indigo);
   flex-shrink: 0;
@@ -789,9 +796,11 @@ h2 em {
   gap: 10px;
   align-items: baseline;
 }
-.tier li i {
+.tier li .icon {
   color: var(--brass);
   font-size: 14px;
+  position: relative;
+  top: 1px; /* svg sits on the flex baseline; the old glyph hung 1px below it */
 }
 .tier__pop {
   position: absolute;
@@ -858,7 +867,7 @@ h2 em {
   font-size: 15px;
   color: var(--on-dark-mute);
 }
-.lasik__foot li i {
+.lasik__foot li .icon {
   color: var(--brass);
   font-size: 18px;
   flex-shrink: 0;
@@ -916,7 +925,7 @@ h2 em {
   gap: 14px;
   margin-bottom: 22px;
 }
-.doc--more .more i {
+.doc--more .more .icon {
   font-size: 34px;
   color: var(--indigo-pale);
   justify-self: center;
@@ -969,7 +978,7 @@ h2 em {
 .tech__row:last-child {
   border-bottom: 1px solid var(--line);
 }
-.tech__row i {
+.tech__row .icon {
   font-size: 30px;
   color: var(--indigo);
   grid-row: span 2;
@@ -1012,7 +1021,7 @@ h2 em {
   grid-template-columns: 44px 1fr;
   gap: 0 16px;
 }
-.opt__it i {
+.opt__it .icon {
   font-size: 28px;
   color: var(--indigo-pale);
   grid-row: span 2;
@@ -1122,7 +1131,7 @@ h2 em {
   line-height: 1.5;
   padding: 6px 0;
 }
-.bpjs li i {
+.bpjs li .icon {
   color: var(--indigo);
   font-size: 18px;
   flex-shrink: 0;
@@ -1298,13 +1307,13 @@ h2 em {
 .faq summary::-webkit-details-marker {
   display: none;
 }
-.faq summary i {
+.faq summary .icon {
   font-size: 20px;
   color: var(--indigo);
   transition: transform 0.35s var(--ease);
   flex-shrink: 0;
 }
-.faq details[open] summary i {
+.faq details[open] summary .icon {
   transform: rotate(45deg);
 }
 .faq__a {

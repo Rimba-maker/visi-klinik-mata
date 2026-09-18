@@ -1,6 +1,8 @@
 ---
 import '../styles/global.css';
 import Photo from '../components/Photo.astro';
+import Icon from '../components/Icon.astro';
+import type { IconName } from '../components/icons';
 
 const conditions = [
   {
@@ -155,7 +157,7 @@ const doctors = [
   },
 ];
 
-const tech = [
+const tech: { icon: IconName; name: string; brand: string; description: string }[] = [
   {
     icon: 'scan',
     name: 'OCT — Optical Coherence Tomography',
@@ -348,7 +350,6 @@ const lasik = [
       href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Marcellus&display=swap"
       rel="stylesheet"
     />
-    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1" defer></script>
   </head>
   <body>
     <!-- almond (eye) clip shape, used by Photo almond -->
@@ -389,7 +390,8 @@ const lasik = [
           </li>
         </ul>
         <a href="#booking" class="btn btn-primary">
-          <i class="ph-bold ph-calendar-blank" aria-hidden="true"></i>Book Pemeriksaan
+          <Icon name="calendar-blank" />
+          Book Pemeriksaan
         </a>
       </div>
     </nav>
@@ -425,7 +427,8 @@ const lasik = [
             </p>
             <div class="cta-row">
               <a href="#booking" class="btn btn-primary">
-                <i class="ph-bold ph-calendar-blank" aria-hidden="true"></i>Book Pemeriksaan
+                <Icon name="calendar-blank" />
+                Book Pemeriksaan
               </a>
               <a href="#lasik" class="btn btn-ghost">
                 Konsultasi Lasik
@@ -433,16 +436,19 @@ const lasik = [
             </div>
             <ul class="assure" aria-label="Fakta klinik">
               <li>
-                <i class="ph-bold ph-check-circle" aria-hidden="true"></i>15+ Dokter Sp.M Bersertifikat
+                <Icon name="check-circle" />
+                15+ Dokter Sp.M Bersertifikat
               </li>
               <li>
-                <i class="ph-bold ph-check-circle" aria-hidden="true"></i>5 Cabang Jabodetabek
+                <Icon name="check-circle" />5 Cabang Jabodetabek
               </li>
               <li>
-                <i class="ph-bold ph-check-circle" aria-hidden="true"></i>BPJS & Asuransi Partner
+                <Icon name="check-circle" />
+                BPJS & Asuransi Partner
               </li>
               <li>
-                <i class="ph-bold ph-check-circle" aria-hidden="true"></i>Teknologi Wavelight FS200 Lasik
+                <Icon name="check-circle" />
+                Teknologi Wavelight FS200 Lasik
               </li>
             </ul>
           </div>
@@ -484,7 +490,7 @@ const lasik = [
               <circle cx="60" cy="60" r="4" fill="currentColor" />
             </svg>
             <div class="a-badge">
-              <i class="ph-bold ph-shield-check" aria-hidden="true"></i>
+              <Icon name="shield-check" />
               <div>
                 <strong>Terpercaya sejak 2009</strong>
                 <span>Kemenkes RI · PERDAMI · 50.000+ pasien</span>
@@ -615,7 +621,7 @@ const lasik = [
                   <ul>
                     {tier.items.map((item) => (
                       <li>
-                        <i class="ph-bold ph-check" aria-hidden="true"></i>
+                        <Icon name="check" />
                         {item}
                       </li>
                     ))}
@@ -638,16 +644,20 @@ const lasik = [
               <h3>Syarat Lasik</h3>
               <ul>
                 <li>
-                  <i class="ph-bold ph-check-circle" aria-hidden="true"></i>Usia minimal 18 tahun
+                  <Icon name="check-circle" />
+                  Usia minimal 18 tahun
                 </li>
                 <li>
-                  <i class="ph-bold ph-check-circle" aria-hidden="true"></i>Refraksi stabil 1 tahun terakhir
+                  <Icon name="check-circle" />
+                  Refraksi stabil 1 tahun terakhir
                 </li>
                 <li>
-                  <i class="ph-bold ph-check-circle" aria-hidden="true"></i>Tidak hamil atau menyusui
+                  <Icon name="check-circle" />
+                  Tidak hamil atau menyusui
                 </li>
                 <li>
-                  <i class="ph-bold ph-check-circle" aria-hidden="true"></i>Tidak ada kondisi kornea kontradiksi
+                  <Icon name="check-circle" />
+                  Tidak ada kondisi kornea kontradiksi
                 </li>
               </ul>
             </div>
@@ -683,14 +693,14 @@ const lasik = [
                 <h3>{doctor.name}</h3>
                 <p class="doc__spec">{doctor.specialty}</p>
                 <p class="doc__sch">
-                  <i class="ph-bold ph-calendar-blank" aria-hidden="true"></i>
+                  <Icon name="calendar-blank" />
                   {doctor.schedule}
                 </p>
               </article>
             ))}
             <article class="doc doc--more">
               <div class="more">
-                <i class="ph-bold ph-stethoscope" aria-hidden="true"></i>
+                <Icon name="stethoscope" />
                 <p>Dan dokter Sp.M lainnya di 5 cabang</p>
               </div>
               <a href="#booking" class="btn btn-outline btn-block">
@@ -734,7 +744,7 @@ const lasik = [
             <div>
               {tech.map((device) => (
                 <div class="tech__row">
-                  <i class={`ph-bold ph-${device.icon}`} aria-hidden="true"></i>
+                  <Icon name={device.icon} />
                   <h3>{device.name}</h3>
                   <span class="tech__brand">{device.brand}</span>
                   <p>{device.description}</p>
@@ -757,7 +767,7 @@ const lasik = [
             </p>
             <div class="opt__list">
               <div class="opt__it">
-                <i class="ph-bold ph-eyeglasses" aria-hidden="true"></i>
+                <Icon name="eyeglasses" />
                 <h3>Frame Collection</h3>
                 <ul>
                   <li>Frame premium: Ray-Ban, Oakley, Persol</li>
@@ -767,7 +777,7 @@ const lasik = [
                 </ul>
               </div>
               <div class="opt__it">
-                <i class="ph-bold ph-circle-dashed" aria-hidden="true"></i>
+                <Icon name="circle-dashed" />
                 <h3>Lensa Premium</h3>
                 <ul>
                   <li>Zeiss (Jerman) — premium clarity</li>
@@ -776,7 +786,7 @@ const lasik = [
                 </ul>
               </div>
               <div class="opt__it">
-                <i class="ph-bold ph-circles-three" aria-hidden="true"></i>
+                <Icon name="circles-three" />
                 <h3>Contact Lens</h3>
                 <ul>
                   <li>Soft daily, monthly</li>
@@ -853,13 +863,16 @@ const lasik = [
                 <h3>Layanan BPJS Kesehatan</h3>
                 <ul>
                   <li>
-                    <i class="ph-bold ph-check-circle" aria-hidden="true"></i>Pemeriksaan & treatment dasar
+                    <Icon name="check-circle" />
+                    Pemeriksaan & treatment dasar
                   </li>
                   <li>
-                    <i class="ph-bold ph-check-circle" aria-hidden="true"></i>Cataract surgery (IOL monofokal standar)
+                    <Icon name="check-circle" />
+                    Cataract surgery (IOL monofokal standar)
                   </li>
                   <li>
-                    <i class="ph-bold ph-check-circle" aria-hidden="true"></i>Glaukoma medication (formularium nasional)
+                    <Icon name="check-circle" />
+                    Glaukoma medication (formularium nasional)
                   </li>
                 </ul>
                 <p>* Perlu rujukan dari FKTP</p>
@@ -889,7 +902,7 @@ const lasik = [
             ))}
             <div class="when__it when__it--sos">
               <div class="when__sos">
-                <i class="ph-bold ph-warning-circle" aria-hidden="true"></i>
+                <Icon name="warning-circle" />
               </div>
               <h3>Tanda Darurat</h3>
               <p class="when__int">Segera Ke Dokter</p>
@@ -1020,7 +1033,7 @@ const lasik = [
                 <details name="faq">
                   <summary>
                     {question}
-                    <i class="ph-bold ph-plus" aria-hidden="true"></i>
+                    <Icon name="plus" />
                   </summary>
                   <p class="faq__a">{answer}</p>
                 </details>
@@ -1108,7 +1121,8 @@ const lasik = [
                 <input type="date" id="tanggal" name="tanggal" />
               </div>
               <button type="submit" class="btn btn-primary btn-block" style="margin-top: 6px;">
-                <i class="ph-bold ph-calendar-check" aria-hidden="true"></i>Book Sekarang
+                <Icon name="calendar-check" />
+                Book Sekarang
               </button>
             </form>
             <p class="book__wa">
@@ -1140,10 +1154,12 @@ const lasik = [
             </p>
             <div class="foot__soc">
               <a href="#" aria-label="Instagram Visi Klinik Mata">
-                <i class="ph-bold ph-instagram-logo" aria-hidden="true"></i>Instagram
+                <Icon name="instagram-logo" />
+                Instagram
               </a>
               <a href="#" aria-label="YouTube Visi Klinik Mata">
-                <i class="ph-bold ph-youtube-logo" aria-hidden="true"></i>YouTube
+                <Icon name="youtube-logo" />
+                YouTube
               </a>
             </div>
           </div>
