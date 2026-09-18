@@ -403,6 +403,12 @@ h1 em, h2 em { font-style: normal; color: var(--brass); }
 .faq__art > .frame:first-child, .book__art > .frame:first-child { height: 100%; }
 .b-circle { position: absolute; right: -6%; bottom: 6%; width: 40%; z-index: 3; }
 
+.nav__logo { white-space: nowrap; }
+@media (max-width: 480px) {
+  .nav__logo { font-size: 18px; gap: 8px; }
+  .nav .btn { padding: 10px 14px; font-size: 14px; }
+}
+
 .foot__cities { display: grid; grid-template-columns: repeat(5, 1fr); gap: 24px; padding-bottom: 48px; margin-bottom: 48px; border-bottom: 1px solid var(--line); }
 .city { text-align: center; }
 .city .frame { width: min(148px, 100%); margin: 0 auto 18px; --rx: 8px; --ry: 8px; }
