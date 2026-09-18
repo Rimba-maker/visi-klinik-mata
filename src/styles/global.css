@@ -196,3 +196,12 @@ h1 em, h2 em { font-style: normal; color: var(--brass); }
 .cond__item li { font-size: 14.5px; color: var(--ink-mute); line-height: 1.75; }
 .cond__item li::before { content: "— "; color: var(--brass-deep); }
 
+/* ─── Layanan ─── */
+.svc { display: grid; grid-template-columns: repeat(4, 1fr); gap: clamp(40px, 5vw, 64px) clamp(20px, 2.4vw, 36px); }
+.svc__it .frame { aspect-ratio: 4 / 5; margin-bottom: 26px; }
+.svc__it h3 { margin-bottom: 10px; }
+.svc__it li { font-size: 14.5px; color: var(--ink-mute); line-height: 1.75; }
+.svc__it li::before { content: "— "; color: var(--brass-deep); }
+.svc__price { margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--line); font: 500 15px var(--body); color: var(--indigo-deep); }
+.svc__it:nth-child(even) { transform: translateY(28px); }
+
