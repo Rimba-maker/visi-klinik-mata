@@ -24,6 +24,16 @@ const services = [
   { t: 'Optical Shop In-House', l: ['Frame premium & affordable', 'Lensa Zeiss, Essilor, Hoya', 'Contact lens fitting'], p: 'One-stop solution', img: 5766564, r: 'r-squircle', alt: 'Rak dinding berisi ratusan frame kacamata' },
 ];
 
+const doctors = [
+  { n: 'dr. Andreas Hartono, Sp.M(K)', s: 'Lasik & Refractive Surgery', d: 'Senin · Rabu · Jumat', img: 4173239 },
+  { n: 'dr. Sari Wulandari, Sp.M', s: 'Pediatric Ophthalmology', d: 'Selasa · Kamis · Sabtu', img: 5327580 },
+  { n: 'dr. Reza Pratama, Sp.M(K)', s: 'Vitreoretinal Surgery', d: 'Senin · Selasa · Kamis', img: 5452268 },
+  { n: 'dr. Maya Setiawati, Sp.M', s: 'Cataract & Anterior Segment', d: 'Rabu · Jumat · Sabtu', img: 8376309 },
+  { n: 'dr. Linda Wijaya, Sp.M(K)', s: 'Oculoplastic Surgery', d: 'Selasa · Jumat', img: 15641079 },
+  { n: 'dr. Nina Indriani, Sp.M', s: 'General Ophthalmology', d: 'Setiap hari kerja', img: 5998474 },
+  { n: 'dr. Tika Larasati, Sp.M', s: 'Dry Eye & Ocular Surface', d: 'Rabu · Jumat · Sabtu', img: 6749773 },
+];
+
 const lasik = [
   { t: 'PRK', p: 'Rp 12 jt / mata', l: ['Untuk kornea tipis', 'Hasil permanen', 'Recovery 5–7 hari', 'Minus -1 s/d -10'] },
   { t: 'Femto-LASIK', p: 'Rp 15 jt / mata', pop: true, l: ['Wavelight FS200 femtosecond', '100% blade-free', 'Recovery 24–48 jam', 'Minus -1 s/d -10'] },
@@ -211,6 +221,33 @@ const lasik = [
           <a href="#booking" class="btn btn-primary">Konsultasi Lasik Gratis</a>
           <p>Termasuk Lasik eligibility test tanpa biaya</p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── DOKTER ─── -->
+  <section id="dokter" class="sec on-pearl" aria-label="Tim dokter spesialis">
+    <div class="wrap">
+      <div class="head">
+        <h2>Tim Dokter <em>Spesialis Mata</em></h2>
+        <p class="lede">Semua bersertifikat Sp.M, beberapa dengan sub-spesialisasi lanjutan.</p>
+      </div>
+      <div class="docs">
+        {doctors.map((d) => (
+          <article class="doc">
+            <Photo id={d.img} w={560} cls="r-arch frame--ring" pos="50% 20%" alt={`${d.n} — foto ilustrasi`} />
+            <h3>{d.n}</h3>
+            <p class="doc__spec">{d.s}</p>
+            <p class="doc__sch"><i class="ph-bold ph-calendar-blank" aria-hidden="true"></i>{d.d}</p>
+          </article>
+        ))}
+        <article class="doc doc--more">
+          <div class="more">
+            <i class="ph-bold ph-stethoscope" aria-hidden="true"></i>
+            <p>Dan dokter Sp.M lainnya di 5 cabang</p>
+          </div>
+          <a href="#booking" class="btn btn-outline btn-block">Lihat jadwal</a>
+        </article>
       </div>
     </div>
   </section>
