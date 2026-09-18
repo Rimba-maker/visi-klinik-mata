@@ -355,6 +355,51 @@ h1 em, h2 em { font-style: normal; color: var(--brass); }
 .foot__bot { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; font-size: 13px; color: var(--ink-mute); }
 .foot__certs { display: flex; gap: 20px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; font-size: 12px; color: var(--brass-deep); }
 
+/* ─── Responsive ─── */
+@media (max-width: 1100px) {
+  .when { grid-template-columns: repeat(3, 1fr); gap: 40px 28px; }
+  .when::before { display: none; }
+  .svc, .docs { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 900px) {
+  .hero__grid, .cond, .lasik, .tech, .opt, .price, .testi__lead, .faq, .book, .head { grid-template-columns: 1fr; }
+  .hero { padding-top: 104px; min-height: unset; }
+  .hero__art { margin: 24px auto 0; max-width: 480px; }
+  .nav__links { display: none; }
+  .tech__art, .price__side, .faq__art, .cond__art { position: relative; top: 0; }
+  .frame { --rx: 8px; --ry: 8px; }
+  .frame--ring-l { --rx: -8px; }
+  .tech__art, .opt__art, .cond__art { max-width: 520px; margin-inline: auto; width: 100%; }
+  .lasik__art { margin-inline: auto; }
+  .lasik__foot { grid-template-columns: 1fr; padding: 28px 24px; }
+  .lasik__foot ul { grid-template-columns: 1fr; }
+  .testi__grid { grid-template-columns: 1fr; gap: 36px; }
+  .foot__top { grid-template-columns: 1fr 1fr; }
+  .faq__art { margin-inline: auto; width: 80%; }
+  .book__art { margin-inline: auto; }
+}
+@media (max-width: 640px) {
+  .assure, .cond__list, .form__row { grid-template-columns: 1fr; }
+  .svc { gap: 40px 16px; }
+  .svc__it:nth-child(even), .doc:nth-child(4n+2), .doc:nth-child(4n+4) { transform: none; }
+  .docs { gap: 32px 14px; }
+  .tier { grid-template-columns: 1fr; }
+  .when { grid-template-columns: 1fr 1fr; }
+  .diopter__scale span { font-size: 12px; }
+  .ptable .n { display: none; }
+  .foot__top { grid-template-columns: 1fr; }
+  .foot__bot { flex-direction: column; }
+  .btn-lg-m { width: 100%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .seal { animation: none; }
+  .hero__art .frame > .sh { animation: none; }
+  .sh img { animation: none !important; transition: none; }
+  .btn:hover { transform: none; }
+}
+
 .faq__art > .frame:first-child, .book__art > .frame:first-child { height: 100%; }
 .b-circle { position: absolute; right: -6%; bottom: 6%; width: 40%; z-index: 3; }
 
