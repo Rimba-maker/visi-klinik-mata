@@ -46,6 +46,45 @@ import Photo from '../components/Photo.astro';
 
   <main id="top">
 
+  <!-- ─── HERO ─── -->
+  <section class="hero" aria-label="Hero">
+    <svg class="hero__rings" viewBox="0 0 800 800" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true">
+      <circle cx="400" cy="400" r="380"/><circle cx="400" cy="400" r="320"/><circle cx="400" cy="400" r="260"/><circle cx="400" cy="400" r="200"/><circle cx="400" cy="400" r="140"/><circle cx="400" cy="400" r="80"/>
+    </svg>
+    <div class="wrap hero__grid">
+      <div>
+        <h1>Mata Sehat,<br />Hidup Lebih <em>Jernih.</em></h1>
+        <p class="hero__sub">Layanan komprehensif: pemeriksaan rutin, Lasik, operasi katarak, treatment retina, kacamata anak hingga lansia.</p>
+        <div class="cta-row">
+          <a href="#booking" class="btn btn-primary"><i class="ph-bold ph-calendar-blank" aria-hidden="true"></i>Book Pemeriksaan</a>
+          <a href="#lasik" class="btn btn-ghost">Konsultasi Lasik</a>
+        </div>
+        <ul class="assure" aria-label="Fakta klinik">
+          <li><i class="ph-bold ph-check-circle" aria-hidden="true"></i>15+ Dokter Sp.M Bersertifikat</li>
+          <li><i class="ph-bold ph-check-circle" aria-hidden="true"></i>5 Cabang Jabodetabek</li>
+          <li><i class="ph-bold ph-check-circle" aria-hidden="true"></i>BPJS & Asuransi Partner</li>
+          <li><i class="ph-bold ph-check-circle" aria-hidden="true"></i>Teknologi Wavelight FS200 Lasik</li>
+        </ul>
+      </div>
+
+      <div class="hero__art">
+        <Photo id={6749706} w={1000} eager cls="a-main r-arch frame--ring frame--marks" pos="50% 30%" alt="Pasien menjalani pemeriksaan mata dengan slit lamp" />
+        <Photo id={801867} w={600} eager cls="a-circle r-circle frame--sticker" alt="Close-up mata dengan iris cokelat keemasan" />
+        <Photo id={5215017} w={500} eager cls="a-small r-tab frame--sticker" pos="40% 30%" alt="Dokter tersenyum memeriksa pasien" />
+        <svg class="seal" viewBox="0 0 120 120" aria-hidden="true">
+          <defs><path id="seal-path" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0" /></defs>
+          <text><textPath href="#seal-path" textLength="284" lengthAdjust="spacing">Spesialis Mata · Kemenkes RI · PERDAMI · </textPath></text>
+          <path d="M40,60 C48,50 72,50 80,60 C72,70 48,70 40,60Z" fill="none" stroke="currentColor" />
+          <circle cx="60" cy="60" r="4" fill="currentColor" />
+        </svg>
+        <div class="a-badge">
+          <i class="ph-bold ph-shield-check" aria-hidden="true"></i>
+          <div><strong>Terpercaya sejak 2009</strong><span>Kemenkes RI · PERDAMI · 50.000+ pasien</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   </main>
 
 
