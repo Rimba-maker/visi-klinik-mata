@@ -2,6 +2,10 @@
   "name": "visi-klinik-mata",
   "version": "0.0.1",
   "private": true,
+  "packageManager": "pnpm@10.34.5",
+  "engines": {
+    "node": ">=22.12.0"
+  },
   "scripts": {
     "dev": "astro dev",
     "build": "astro check && astro build",
