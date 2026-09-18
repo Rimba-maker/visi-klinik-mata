@@ -358,6 +358,12 @@ h1 em, h2 em { font-style: normal; color: var(--brass); }
 .faq__art > .frame:first-child, .book__art > .frame:first-child { height: 100%; }
 .b-circle { position: absolute; right: -6%; bottom: 6%; width: 40%; z-index: 3; }
 
+.foot__cities { display: grid; grid-template-columns: repeat(5, 1fr); gap: 24px; padding-bottom: 48px; margin-bottom: 48px; border-bottom: 1px solid var(--line); }
+.city { text-align: center; }
+.city .frame { width: min(148px, 100%); margin: 0 auto 18px; --rx: 8px; --ry: 8px; }
+.city p { font: 400 19px var(--display); color: var(--ink); }
+@media (max-width: 640px) { .foot__cities { grid-template-columns: repeat(3, 1fr); gap: 28px 12px; } }
+
 /* ─── Galeri ─── */
 .gal { display: grid; grid-template-columns: repeat(12, 1fr); gap: clamp(20px, 2.4vw, 36px); align-items: center; }
 .gal .frame { --rx: 12px; --ry: 12px; }

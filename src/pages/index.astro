@@ -78,6 +78,14 @@ const faq = [
   ['Bisa langsung fitting kacamata setelah periksa?', 'Ya. Optical shop in-clinic tersedia di setiap cabang. Setelah pemeriksaan, langsung fitting kacamata atau contact lens — frame premium (Ray-Ban, Oakley) maupun affordable, dengan lensa Zeiss, Essilor, dan Hoya.'],
 ];
 
+const cities = [
+  { n: 'Jakarta Selatan', img: 35581806, alt: 'Deretan gedung Jakarta saat matahari terbenam' },
+  { n: 'Jakarta Pusat', img: 7361776, alt: 'Pemandangan udara Monumen Nasional di Jakarta' },
+  { n: 'BSD, Tangerang', img: 30496412, alt: 'Fasad kaca gedung modern' },
+  { n: 'Bekasi', img: 14792540, alt: 'Jalan ramai dengan sepeda motor di kota Indonesia' },
+  { n: 'Surabaya', img: 29321001, alt: 'Jalan Pecinan Surabaya di malam hari dengan papan neon' },
+];
+
 const lasik = [
   { t: 'PRK', p: 'Rp 12 jt / mata', l: ['Untuk kornea tipis', 'Hasil permanen', 'Recovery 5–7 hari', 'Minus -1 s/d -10'] },
   { t: 'Femto-LASIK', p: 'Rp 15 jt / mata', pop: true, l: ['Wavelight FS200 femtosecond', '100% blade-free', 'Recovery 24–48 jam', 'Minus -1 s/d -10'] },
@@ -535,6 +543,14 @@ const lasik = [
   <!-- ─── FOOTER ─── -->
   <footer id="lokasi" class="foot" aria-label="Footer">
     <div class="wrap">
+      <div class="foot__cities" aria-label="Cabang">
+        {cities.map((c) => (
+          <div class="city">
+            <Photo id={c.img} w={360} cls="r-circle frame--ring" alt={c.alt} />
+            <p>{c.n}</p>
+          </div>
+        ))}
+      </div>
       <div class="foot__top">
         <div>
           <p class="foot__brand">Visi Klinik Mata</p>
