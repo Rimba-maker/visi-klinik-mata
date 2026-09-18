@@ -488,6 +488,47 @@ const lasik = [
     </div>
   </section>
 
+  <!-- ─── BOOKING ─── -->
+  <section id="booking" class="sec on-deep" aria-label="Form booking pemeriksaan">
+    <div class="wrap book">
+      <div>
+        <div class="book__art">
+          <Photo id={7789603} w={900} cls="r-arch frame--ring frame--marks" pos="50% 60%" alt="Ruang periksa bersih dengan tempat tidur pasien" />
+        </div>
+      </div>
+      <div>
+        <h2>Book Pemeriksaan <em>Mata</em></h2>
+        <p class="lede" style="margin-bottom: 32px;">Pemeriksaan komprehensif 45–60 menit. Hasil & rekomendasi langsung dari dokter spesialis.</p>
+        <form class="form" action="#" method="POST" novalidate aria-label="Form booking">
+          <div class="form__row">
+            <div class="form__g"><label for="nama">Nama Lengkap</label><input type="text" id="nama" name="nama" placeholder="Nama Anda" required autocomplete="name" /></div>
+            <div class="form__g"><label for="wa">Nomor WhatsApp</label><input type="tel" id="wa" name="wa" placeholder="08xx-xxxx-xxxx" required autocomplete="tel" /></div>
+          </div>
+          <div class="form__g"><label for="email">Email</label><input type="email" id="email" name="email" placeholder="email@anda.com" autocomplete="email" /></div>
+          <div class="form__row">
+            <div class="form__g">
+              <label for="layanan-booking">Layanan</label>
+              <select id="layanan-booking" name="layanan" required>
+                <option value="" disabled selected>Pilih layanan</option>
+                <option value="general">General checkup</option><option value="lasik">Konsultasi Lasik</option><option value="katarak">Konsultasi Katarak</option><option value="glaucoma">Glaukoma</option><option value="anak">Pediatric / Anak</option><option value="dryeye">Dry Eye</option><option value="other">Lainnya</option>
+              </select>
+            </div>
+            <div class="form__g">
+              <label for="cabang">Cabang</label>
+              <select id="cabang" name="cabang" required>
+                <option value="" disabled selected>Pilih cabang</option>
+                <option value="jaksel">Jakarta Selatan</option><option value="jakpus">Jakarta Pusat</option><option value="bsd">BSD, Tangerang</option><option value="bekasi">Bekasi</option><option value="sby">Surabaya</option>
+              </select>
+            </div>
+          </div>
+          <div class="form__g"><label for="tanggal">Tanggal Preferensi</label><input type="date" id="tanggal" name="tanggal" /></div>
+          <button type="submit" class="btn btn-primary btn-block" style="margin-top: 6px;"><i class="ph-bold ph-calendar-check" aria-hidden="true"></i>Book Sekarang</button>
+        </form>
+        <p class="book__wa">Atau chat langsung via <a href="https://wa.me/6282100000000">WhatsApp</a></p>
+      </div>
+    </div>
+  </section>
+
   </main>
 
 

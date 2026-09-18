@@ -325,6 +325,21 @@ h1 em, h2 em { font-style: normal; color: var(--brass); }
 .faq details[open] summary i { transform: rotate(45deg); }
 .faq__a { padding: 0 0 26px; color: var(--ink-mute); max-width: 60ch; font-size: 16px; }
 
+/* ─── Booking ─── */
+.book { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: clamp(40px, 6vw, 96px); align-items: center; }
+.book__art { position: relative; aspect-ratio: 4 / 5; max-width: 460px; width: 100%; }
+.book h2 { margin-bottom: 18px; }
+.book__wa { margin-top: 28px; font-size: 15px; color: var(--on-dark-mute); }
+.book__wa a { color: var(--brass); text-decoration: underline; text-underline-offset: 4px; }
+.form { display: flex; flex-direction: column; gap: 16px; background: rgba(255,255,255,0.05); border: 1px solid var(--line-dark); border-radius: 16px; padding: clamp(24px, 3vw, 40px); }
+.form__row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.form__g { display: flex; flex-direction: column; gap: 8px; }
+.form label { font-size: 14px; color: var(--on-dark-mute); }
+.form input, .form select { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.22); border-radius: 8px; padding: 13px 14px; color: #fff; font: 400 16px var(--body); width: 100%; color-scheme: dark; }
+.form input::placeholder { color: rgba(255,255,255,0.45); }
+.form input:focus, .form select:focus { outline: none; border-color: var(--brass); box-shadow: 0 0 0 3px rgba(201,168,106,0.25); }
+.form select option { background: var(--navy); }
+
 .faq__art > .frame:first-child, .book__art > .frame:first-child { height: 100%; }
 /* ─── Galeri ─── */
 .gal { display: grid; grid-template-columns: repeat(12, 1fr); gap: clamp(20px, 2.4vw, 36px); align-items: center; }
