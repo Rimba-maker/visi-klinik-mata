@@ -69,6 +69,15 @@ const testi = [
   { tag: 'Diabetic Retinopathy', q: '"Diabetic 15 tahun, dapat retinopathy stadium 2. Treatment anti-VEGF injection rutin di Visi sudah 2 tahun, kondisi stabil. Senang ada klinik yang treat saya seperti partner, bukan sekadar pasien."', by: 'Pak Bambang, 58 tahun', m: 'B' },
 ];
 
+const faq = [
+  ['Lasik aman tidak?', 'Lasik adalah prosedur yang sudah dilakukan jutaan kali worldwide dengan safety record tinggi. Risiko minor sangat minimal jika dilakukan dokter berpengalaman dengan peralatan modern seperti Wavelight FS200.'],
+  ['Setelah Lasik, mata bisa minus lagi?', 'Hasil Lasik permanen untuk kondisi refraksi saat ini. Namun presbyopia (mata tua) tetap bisa terjadi pada usia 40+ — ini proses alami aging yang tidak berkaitan dengan prosedur Lasik.'],
+  ['Operasi katarak BPJS, caranya bagaimana?', 'BPJS menanggung biaya phacoemulsification + IOL monofokal standar. Upgrade ke IOL multifokal/toric dikenakan biaya tambahan pribadi. Pasien perlu rujukan dari faskes tingkat pertama (FKTP) terlebih dahulu.'],
+  ['Anak myopia, harus pakai kacamata?', 'Tergantung tingkat minusnya. Minus di bawah -1 mungkin tidak perlu full-time. Dokter pediatric ophthalmology akan membuat rencana yang paling sesuai — termasuk opsi myopia control seperti Ortho-K atau MiSight.'],
+  ['Dry eye bisa sembuh total?', 'Dry eye bisa dikelola (managed) dengan sangat baik — tidak selalu "sembuh" 100% tergantung penyebabnya. IPL therapy sangat efektif untuk meibomian gland dysfunction dan memberikan perbaikan jangka panjang.'],
+  ['Bisa langsung fitting kacamata setelah periksa?', 'Ya. Optical shop in-clinic tersedia di setiap cabang. Setelah pemeriksaan, langsung fitting kacamata atau contact lens — frame premium (Ray-Ban, Oakley) maupun affordable, dengan lensa Zeiss, Essilor, dan Hoya.'],
+];
+
 const lasik = [
   { t: 'PRK', p: 'Rp 12 jt / mata', l: ['Untuk kornea tipis', 'Hasil permanen', 'Recovery 5–7 hari', 'Minus -1 s/d -10'] },
   { t: 'Femto-LASIK', p: 'Rp 15 jt / mata', pop: true, l: ['Wavelight FS200 femtosecond', '100% blade-free', 'Recovery 24–48 jam', 'Minus -1 s/d -10'] },
@@ -454,6 +463,27 @@ const lasik = [
             <figcaption><span class="tag">{t.tag}</span><small>{t.by}</small></figcaption>
           </figure>
         ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FAQ ─── -->
+  <section class="sec on-pearl" aria-label="Pertanyaan yang sering ditanyakan">
+    <div class="wrap faq">
+      <div class="faq__art">
+        <Photo id={19218034} w={800} cls="r-arch frame--ring frame--marks" pos="50% 25%" alt="Dokter tersenyum dengan jas lab dan stetoskop" />
+        <Photo id={4225880} w={420} cls="f-circle r-circle frame--sticker" pos="50% 40%" alt="Tenaga medis berjas lab memeriksa hasil rontgen" />
+      </div>
+      <div>
+        <h2>Pertanyaan <em>Umum</em></h2>
+        <div>
+          {faq.map(([q, a]) => (
+            <details name="faq">
+              <summary>{q}<i class="ph-bold ph-plus" aria-hidden="true"></i></summary>
+              <p class="faq__a">{a}</p>
+            </details>
+          ))}
+        </div>
       </div>
     </div>
   </section>

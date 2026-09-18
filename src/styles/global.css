@@ -312,6 +312,20 @@ h1 em, h2 em { font-style: normal; color: var(--brass); }
 .testi__it .tag { margin: 18px 0 4px; }
 .testi__it small { display: block; font-size: 14px; color: var(--on-dark-mute); }
 
+/* ─── FAQ ─── */
+.faq { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: clamp(40px, 6vw, 96px); align-items: start; }
+.faq__art { position: sticky; top: 100px; aspect-ratio: 4 / 5; max-width: 420px; }
+.faq__art .f-circle { position: absolute; right: -14%; bottom: 6%; width: 40%; z-index: 3; }
+.faq h2 { margin-bottom: 36px; }
+.faq details { border-top: 1px solid var(--line); }
+.faq details:last-child { border-bottom: 1px solid var(--line); }
+.faq summary { list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 24px 0; cursor: pointer; font: 400 22px/1.3 var(--display); }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary i { font-size: 20px; color: var(--indigo); transition: transform .35s var(--ease); flex-shrink: 0; }
+.faq details[open] summary i { transform: rotate(45deg); }
+.faq__a { padding: 0 0 26px; color: var(--ink-mute); max-width: 60ch; font-size: 16px; }
+
+.faq__art > .frame:first-child, .book__art > .frame:first-child { height: 100%; }
 /* ─── Galeri ─── */
 .gal { display: grid; grid-template-columns: repeat(12, 1fr); gap: clamp(20px, 2.4vw, 36px); align-items: center; }
 .gal .frame { --rx: 12px; --ry: 12px; }
