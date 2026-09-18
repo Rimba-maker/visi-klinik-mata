@@ -1,0 +1,12 @@
+---
+import { icons, type IconName } from './icons';
+
+interface Props {
+  name: IconName;
+}
+const { name } = Astro.props;
+---
+
+<svg class="icon" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false">
+  <Fragment set:html={icons[name]} />
+</svg>
