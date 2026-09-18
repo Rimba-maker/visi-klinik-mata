@@ -34,6 +34,15 @@ const doctors = [
   { n: 'dr. Tika Larasati, Sp.M', s: 'Dry Eye & Ocular Surface', d: 'Rabu · Jumat · Sabtu', img: 6749773 },
 ];
 
+const tech = [
+  { icon: 'scan', n: 'OCT — Optical Coherence Tomography', b: 'Heidelberg Spectralis', d: 'Imaging retina & optic nerve resolusi tinggi untuk diagnosis akurat glaukoma dan retinopathy.' },
+  { icon: 'lightning', n: 'Wavelight FS200 + EX500', b: 'Alcon (US)', d: 'Platform Lasik kelas dunia. Blade-free femtosecond laser, akurasi submikron untuk Femto-LASIK & SMILE.' },
+  { icon: 'target', n: 'Auto Refractor & Corneal Topography', b: 'Nidek / Zeiss', d: 'Pemeriksaan refraksi akurat & mapping kornea untuk menentukan Lasik eligibility.' },
+  { icon: 'drop', n: 'LipiView & LipiFlow', b: 'TearScience', d: 'Diagnostic & treatment dry eye dari root cause meibomian gland dysfunction secara non-invasif.' },
+  { icon: 'chart-bar', n: 'Visual Field Analyzer', b: 'Humphrey HFA3', d: 'Standar emas deteksi glaukoma. Tersedia di seluruh cabang Visi Klinik Mata.' },
+  { icon: 'syringe', n: 'Phacoemulsification Unit', b: 'Centurion Alcon', d: 'Surgery katarak presisi tinggi dengan teknologi Intelligent Phaco untuk recovery lebih cepat.' },
+];
+
 const lasik = [
   { t: 'PRK', p: 'Rp 12 jt / mata', l: ['Untuk kornea tipis', 'Hasil permanen', 'Recovery 5–7 hari', 'Minus -1 s/d -10'] },
   { t: 'Femto-LASIK', p: 'Rp 15 jt / mata', pop: true, l: ['Wavelight FS200 femtosecond', '100% blade-free', 'Recovery 24–48 jam', 'Minus -1 s/d -10'] },
@@ -248,6 +257,33 @@ const lasik = [
           </div>
           <a href="#booking" class="btn btn-outline btn-block">Lihat jadwal</a>
         </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── TEKNOLOGI ─── -->
+  <section class="sec on-white" aria-label="Teknologi alat medis">
+    <div class="wrap">
+      <div class="head">
+        <h2>Teknologi <em>Diagnostic & Surgical</em></h2>
+        <p class="lede">Peralatan medical-grade dari merek dunia untuk hasil terbaik.</p>
+      </div>
+      <div class="tech">
+        <div class="tech__art">
+          <Photo id={35645517} w={900} cls="t-main r-squircle frame--ring frame--marks" alt="Ruang periksa klinik yang terang dengan peralatan medis" />
+          <Photo id={13697730} w={500} cls="t-oval r-oval frame--sticker" alt="Instrumen bedah steril tertata di meja operasi" />
+          <Photo id={5619496} w={500} cls="t-circle r-circle frame--sticker" alt="Ruang tindakan dengan kursi periksa dan unit peralatan" />
+        </div>
+        <div>
+          {tech.map((t) => (
+            <div class="tech__row">
+              <i class={`ph-bold ph-${t.icon}`} aria-hidden="true"></i>
+              <h3>{t.n}</h3>
+              <span class="tech__brand">{t.b}</span>
+              <p>{t.d}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   </section>

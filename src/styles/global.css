@@ -243,3 +243,17 @@ h1 em, h2 em { font-style: normal; color: var(--brass); }
 .doc--more .more i { font-size: 34px; color: var(--indigo-pale); justify-self: center; }
 .doc--more .more p { font: 400 21px/1.25 var(--display); }
 
+/* ─── Teknologi ─── */
+.tech { display: grid; grid-template-columns: 0.95fr 1.05fr; gap: clamp(40px, 6vw, 96px); align-items: start; }
+.tech__art { position: relative; aspect-ratio: 1 / 1.1; position: sticky; top: 100px; }
+.tech__art > * { position: absolute; }
+.t-main { left: 0; top: 0; width: 80%; aspect-ratio: 4 / 5; }
+.t-oval { right: 0; top: 30%; width: 38%; aspect-ratio: 3 / 4; }
+.t-circle { left: 14%; bottom: 0; width: 40%; }
+.tech__row { display: grid; grid-template-columns: 52px 1fr auto; gap: 4px 20px; padding: 26px 0; border-top: 1px solid var(--line); align-items: baseline; }
+.tech__row:last-child { border-bottom: 1px solid var(--line); }
+.tech__row i { font-size: 30px; color: var(--indigo); grid-row: span 2; align-self: start; }
+.tech__row h3 { font-size: 21px; }
+.tech__brand { font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--brass-deep); font-weight: 600; }
+.tech__row p { grid-column: 2 / 4; font-size: 14.5px; color: var(--ink-mute); line-height: 1.65; }
+
