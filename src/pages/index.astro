@@ -6,166 +6,192 @@ const conditions = [
   {
     img: 1486641,
     pos: '50% 50%',
-    t: 'Refraction Errors',
-    l: ['Minus (myopia)', 'Plus (hyperopia)', 'Silinder (astigmatism)', 'Presbyopia (mata tua)'],
+    title: 'Refraction Errors',
+    items: ['Minus (myopia)', 'Plus (hyperopia)', 'Silinder (astigmatism)', 'Presbyopia (mata tua)'],
   },
   {
     img: 30896215,
     pos: '50% 50%',
-    t: 'Myopia Control Anak',
-    l: ['Atropine drops', 'Ortho-K lens malam', 'MiSight contact lens'],
+    title: 'Myopia Control Anak',
+    items: ['Atropine drops', 'Ortho-K lens malam', 'MiSight contact lens'],
   },
   {
     img: 4127849,
     pos: '50% 50%',
-    t: 'Katarak',
-    l: ['Phacoemulsification', 'Multifokal IOL implant', 'Day-surgery, recovery cepat'],
+    title: 'Katarak',
+    items: ['Phacoemulsification', 'Multifokal IOL implant', 'Day-surgery, recovery cepat'],
   },
   {
     img: 34491619,
     pos: '50% 50%',
-    t: 'Glaukoma',
-    l: ['Early detection (IOP)', 'Medication & surgery', 'Lifetime monitoring'],
+    title: 'Glaukoma',
+    items: ['Early detection (IOP)', 'Medication & surgery', 'Lifetime monitoring'],
   },
   {
     img: 946727,
     pos: '50% 50%',
-    t: 'Diabetic Retinopathy',
-    l: ['Screening diabetic patient', 'Laser & injection', 'Anti-VEGF therapy'],
+    title: 'Diabetic Retinopathy',
+    items: ['Screening diabetic patient', 'Laser & injection', 'Anti-VEGF therapy'],
   },
   {
     img: 6660871,
     pos: '50% 30%',
-    t: 'Dry Eye Syndrome',
-    l: ['Computer vision syndrome', 'Meibomian gland dysfunction', 'IPL therapy & punctal plug'],
+    title: 'Dry Eye Syndrome',
+    items: ['Computer vision syndrome', 'Meibomian gland dysfunction', 'IPL therapy & punctal plug'],
   },
   {
     img: 8949024,
     pos: '50% 55%',
-    t: 'Strabismus (Mata Juling)',
-    l: ['Pada anak & dewasa', 'Bedah otot mata', 'Vision therapy'],
+    title: 'Strabismus (Mata Juling)',
+    items: ['Pada anak & dewasa', 'Bedah otot mata', 'Vision therapy'],
   },
   {
     img: 977601,
     pos: '50% 40%',
-    t: 'Floater & Retinal Detachment',
-    l: ['Posterior vitreous detachment', 'Retinal tear & detachment', 'Vitrectomy surgery'],
+    title: 'Floater & Retinal Detachment',
+    items: ['Posterior vitreous detachment', 'Retinal tear & detachment', 'Vitrectomy surgery'],
   },
 ];
 
 const services = [
   {
-    t: 'Pemeriksaan Komprehensif',
-    l: ['Refraction test (auto refraktor)', 'Tonometry (tekanan IOP)', 'Slit lamp examination', 'Funduscopy'],
-    p: 'Rp 250k – 500k',
+    title: 'Pemeriksaan Komprehensif',
+    items: ['Refraction test (auto refraktor)', 'Tonometry (tekanan IOP)', 'Slit lamp examination', 'Funduscopy'],
+    price: 'Rp 250k – 500k',
     img: 6749727,
-    r: 'r-arch',
+    shape: 'r-arch',
     alt: 'Optometris memasang trial frame untuk tes refraksi pada pasien',
   },
   {
-    t: 'Lasik & Refractive Surgery',
-    l: ['Femto-LASIK (Wavelight FS200)', 'SMILE (no-blade)', 'PRK (kornea tipis)'],
-    p: 'Mulai Rp 15 jt / mata',
+    title: 'Lasik & Refractive Surgery',
+    items: ['Femto-LASIK (Wavelight FS200)', 'SMILE (no-blade)', 'PRK (kornea tipis)'],
+    price: 'Mulai Rp 15 jt / mata',
     img: 7580252,
-    r: 'r-oval',
+    shape: 'r-oval',
     alt: 'Dokter memeriksa mata pasien dengan penlight sebelum prosedur refraktif',
   },
   {
-    t: 'Cataract Surgery',
-    l: ['Phacoemulsification', 'IOL implant (mono, multifokal, toric)', 'Day surgery 20 menit'],
-    p: 'Mulai Rp 8 jt / mata',
+    title: 'Cataract Surgery',
+    items: ['Phacoemulsification', 'IOL implant (mono, multifokal, toric)', 'Day surgery 20 menit'],
+    price: 'Mulai Rp 8 jt / mata',
     img: 6291088,
-    r: 'r-leaf',
+    shape: 'r-leaf',
     alt: 'Tim bedah dan instrumen steril di ruang operasi',
   },
   {
-    t: 'Retina Treatment',
-    l: ['Anti-VEGF injection', 'Retinal laser', 'Vitrectomy'],
-    p: 'Mulai Rp 3 – 15 jt',
+    title: 'Retina Treatment',
+    items: ['Anti-VEGF injection', 'Retinal laser', 'Vitrectomy'],
+    price: 'Mulai Rp 3 – 15 jt',
     img: 3732993,
-    r: 'r-squircle',
+    shape: 'r-squircle',
     alt: 'Close-up mata hitam putih dengan detail iris dan pupil',
   },
   {
-    t: 'Pediatric Ophthalmology',
-    l: ['Mata juling & amblyopia', 'Myopia control anak', 'Kacamata anak'],
-    p: 'Konsultasi Rp 350k',
+    title: 'Pediatric Ophthalmology',
+    items: ['Mata juling & amblyopia', 'Myopia control anak', 'Kacamata anak'],
+    price: 'Konsultasi Rp 350k',
     img: 11749499,
-    r: 'r-oval',
+    shape: 'r-oval',
     alt: 'Remaja berkacamata tertawa di ayunan',
   },
   {
-    t: 'Glaukoma Management',
-    l: ['Pemeriksaan tekanan IOP', 'OCT optic nerve', 'Visual field test'],
-    p: 'Mulai Rp 500k',
+    title: 'Glaukoma Management',
+    items: ['Pemeriksaan tekanan IOP', 'OCT optic nerve', 'Visual field test'],
+    price: 'Mulai Rp 500k',
     img: 6153020,
-    r: 'r-arch',
+    shape: 'r-arch',
     alt: 'Close-up mata cokelat dengan bulu mata',
   },
   {
-    t: 'Dry Eye Clinic',
-    l: ['LipiView assessment', 'IPL therapy', 'Punctal plug'],
-    p: 'Mulai Rp 1 jt',
+    title: 'Dry Eye Clinic',
+    items: ['LipiView assessment', 'IPL therapy', 'Punctal plug'],
+    price: 'Mulai Rp 1 jt',
     img: 8867225,
-    r: 'r-leaf',
+    shape: 'r-leaf',
     alt: 'Pekerja kantoran mengusap mata yang lelah',
   },
   {
-    t: 'Optical Shop In-House',
-    l: ['Frame premium & affordable', 'Lensa Zeiss, Essilor, Hoya', 'Contact lens fitting'],
-    p: 'One-stop solution',
+    title: 'Optical Shop In-House',
+    items: ['Frame premium & affordable', 'Lensa Zeiss, Essilor, Hoya', 'Contact lens fitting'],
+    price: 'One-stop solution',
     img: 5766564,
-    r: 'r-squircle',
+    shape: 'r-squircle',
     alt: 'Rak dinding berisi ratusan frame kacamata',
   },
 ];
 
 const doctors = [
-  { n: 'dr. Andreas Hartono, Sp.M(K)', s: 'Lasik & Refractive Surgery', d: 'Senin · Rabu · Jumat', img: 4173239 },
-  { n: 'dr. Sari Wulandari, Sp.M', s: 'Pediatric Ophthalmology', d: 'Selasa · Kamis · Sabtu', img: 5327580 },
-  { n: 'dr. Reza Pratama, Sp.M(K)', s: 'Vitreoretinal Surgery', d: 'Senin · Selasa · Kamis', img: 5452268 },
-  { n: 'dr. Maya Setiawati, Sp.M', s: 'Cataract & Anterior Segment', d: 'Rabu · Jumat · Sabtu', img: 8376309 },
-  { n: 'dr. Linda Wijaya, Sp.M(K)', s: 'Oculoplastic Surgery', d: 'Selasa · Jumat', img: 15641079 },
-  { n: 'dr. Nina Indriani, Sp.M', s: 'General Ophthalmology', d: 'Setiap hari kerja', img: 5998474 },
-  { n: 'dr. Tika Larasati, Sp.M', s: 'Dry Eye & Ocular Surface', d: 'Rabu · Jumat · Sabtu', img: 6749773 },
+  {
+    name: 'dr. Andreas Hartono, Sp.M(K)',
+    specialty: 'Lasik & Refractive Surgery',
+    schedule: 'Senin · Rabu · Jumat',
+    img: 4173239,
+  },
+  {
+    name: 'dr. Sari Wulandari, Sp.M',
+    specialty: 'Pediatric Ophthalmology',
+    schedule: 'Selasa · Kamis · Sabtu',
+    img: 5327580,
+  },
+  {
+    name: 'dr. Reza Pratama, Sp.M(K)',
+    specialty: 'Vitreoretinal Surgery',
+    schedule: 'Senin · Selasa · Kamis',
+    img: 5452268,
+  },
+  {
+    name: 'dr. Maya Setiawati, Sp.M',
+    specialty: 'Cataract & Anterior Segment',
+    schedule: 'Rabu · Jumat · Sabtu',
+    img: 8376309,
+  },
+  { name: 'dr. Linda Wijaya, Sp.M(K)', specialty: 'Oculoplastic Surgery', schedule: 'Selasa · Jumat', img: 15641079 },
+  { name: 'dr. Nina Indriani, Sp.M', specialty: 'General Ophthalmology', schedule: 'Setiap hari kerja', img: 5998474 },
+  {
+    name: 'dr. Tika Larasati, Sp.M',
+    specialty: 'Dry Eye & Ocular Surface',
+    schedule: 'Rabu · Jumat · Sabtu',
+    img: 6749773,
+  },
 ];
 
 const tech = [
   {
     icon: 'scan',
-    n: 'OCT — Optical Coherence Tomography',
-    b: 'Heidelberg Spectralis',
-    d: 'Imaging retina & optic nerve resolusi tinggi untuk diagnosis akurat glaukoma dan retinopathy.',
+    name: 'OCT — Optical Coherence Tomography',
+    brand: 'Heidelberg Spectralis',
+    description: 'Imaging retina & optic nerve resolusi tinggi untuk diagnosis akurat glaukoma dan retinopathy.',
   },
   {
     icon: 'lightning',
-    n: 'Wavelight FS200 + EX500',
-    b: 'Alcon (US)',
-    d: 'Platform Lasik kelas dunia. Blade-free femtosecond laser, akurasi submikron untuk Femto-LASIK & SMILE.',
+    name: 'Wavelight FS200 + EX500',
+    brand: 'Alcon (US)',
+    description:
+      'Platform Lasik kelas dunia. Blade-free femtosecond laser, akurasi submikron untuk Femto-LASIK & SMILE.',
   },
   {
     icon: 'target',
-    n: 'Auto Refractor & Corneal Topography',
-    b: 'Nidek / Zeiss',
-    d: 'Pemeriksaan refraksi akurat & mapping kornea untuk menentukan Lasik eligibility.',
+    name: 'Auto Refractor & Corneal Topography',
+    brand: 'Nidek / Zeiss',
+    description: 'Pemeriksaan refraksi akurat & mapping kornea untuk menentukan Lasik eligibility.',
   },
   {
     icon: 'drop',
-    n: 'LipiView & LipiFlow',
-    b: 'TearScience',
-    d: 'Diagnostic & treatment dry eye dari root cause meibomian gland dysfunction secara non-invasif.',
+    name: 'LipiView & LipiFlow',
+    brand: 'TearScience',
+    description: 'Diagnostic & treatment dry eye dari root cause meibomian gland dysfunction secara non-invasif.',
   },
   {
     icon: 'chart-bar',
-    n: 'Visual Field Analyzer',
-    b: 'Humphrey HFA3',
-    d: 'Standar emas deteksi glaukoma. Tersedia di seluruh cabang Visi Klinik Mata.',
+    name: 'Visual Field Analyzer',
+    brand: 'Humphrey HFA3',
+    description: 'Standar emas deteksi glaukoma. Tersedia di seluruh cabang Visi Klinik Mata.',
   },
   {
     icon: 'syringe',
-    n: 'Phacoemulsification Unit',
-    b: 'Centurion Alcon',
-    d: 'Surgery katarak presisi tinggi dengan teknologi Intelligent Phaco untuk recovery lebih cepat.',
+    name: 'Phacoemulsification Unit',
+    brand: 'Centurion Alcon',
+    description: 'Surgery katarak presisi tinggi dengan teknologi Intelligent Phaco untuk recovery lebih cepat.',
   },
 ];
 
@@ -183,37 +209,38 @@ const prices = [
 
 const when = [
   {
-    t: 'Anak 3–6 Tahun',
-    i: 'Sebelum Masuk Sekolah',
-    d: 'Deteksi mata juling & refraction error sebelum berdampak pada tumbuh kembang anak.',
+    title: 'Anak 3–6 Tahun',
+    interval: 'Sebelum Masuk Sekolah',
+    description: 'Deteksi mata juling & refraction error sebelum berdampak pada tumbuh kembang anak.',
     img: 27467920,
     alt: 'Anak perempuan tersenyum lebar',
   },
   {
-    t: 'Usia Sekolah & Remaja',
-    i: 'Setiap 1–2 Tahun',
-    d: 'Terutama jika banyak menggunakan HP/komputer. Monitor myopia progression rutin.',
+    title: 'Usia Sekolah & Remaja',
+    interval: 'Setiap 1–2 Tahun',
+    description: 'Terutama jika banyak menggunakan HP/komputer. Monitor myopia progression rutin.',
     img: 10933119,
     alt: 'Perempuan muda berkacamata tersenyum',
   },
   {
-    t: 'Dewasa 20–40 Tahun',
-    i: 'Setiap 2 Tahun',
-    d: 'Setiap tahun jika pakai kacamata/lensa kontak. Cegah computer vision syndrome.',
+    title: 'Dewasa 20–40 Tahun',
+    interval: 'Setiap 2 Tahun',
+    description: 'Setiap tahun jika pakai kacamata/lensa kontak. Cegah computer vision syndrome.',
     img: 6345331,
     alt: 'Pria bekerja di depan laptop sambil memegang wajah',
   },
   {
-    t: 'Lansia 40+ Tahun',
-    i: 'Setiap Tahun',
-    d: 'Risiko presbyopia, katarak, dan glaukoma meningkat signifikan. Deteksi dini kunci penanganan.',
+    title: 'Lansia 40+ Tahun',
+    interval: 'Setiap Tahun',
+    description: 'Risiko presbyopia, katarak, dan glaukoma meningkat signifikan. Deteksi dini kunci penanganan.',
     img: 5637591,
     alt: 'Pasangan lansia membaca koran bersama di bangku',
   },
   {
-    t: 'Diabetic Patient',
-    i: 'Setiap 6–12 Bulan',
-    d: 'Diabetes adalah faktor risiko utama eye disease. Screening diabetic retinopathy rutin sangat dianjurkan.',
+    title: 'Diabetic Patient',
+    interval: 'Setiap 6–12 Bulan',
+    description:
+      'Diabetes adalah faktor risiko utama eye disease. Screening diabetic retinopathy rutin sangat dianjurkan.',
     img: 5996744,
     alt: 'Kacamata di atas kartu tes ketajaman penglihatan',
   },
@@ -222,21 +249,24 @@ const when = [
 const testi = [
   {
     tag: 'Cataract Surgery',
-    q: '"Mama saya 68 tahun, katarak bilateral. Surgery di Visi pakai IOL multifokal, sekarang bisa baca koran tanpa kacamata baca. Tetangga sampai nanya operasi di mana."',
+    quote:
+      '"Mama saya 68 tahun, katarak bilateral. Surgery di Visi pakai IOL multifokal, sekarang bisa baca koran tanpa kacamata baca. Tetangga sampai nanya operasi di mana."',
     by: 'Bu Nina, anak pasien katarak',
-    m: 'N',
+    initial: 'N',
   },
   {
     tag: 'Pediatric Ophthalmology',
-    q: '"Anak saya 7 tahun didiagnosis amblyopia (lazy eye). dr. Sari sabar handle anak, kasih plan vision therapy 6 bulan. Hasilnya signifikan dan anak jadi lebih percaya diri."',
+    quote:
+      '"Anak saya 7 tahun didiagnosis amblyopia (lazy eye). dr. Sari sabar handle anak, kasih plan vision therapy 6 bulan. Hasilnya signifikan dan anak jadi lebih percaya diri."',
     by: 'Pak Bayu, ayah pasien anak',
-    m: 'B',
+    initial: 'B',
   },
   {
     tag: 'Diabetic Retinopathy',
-    q: '"Diabetic 15 tahun, dapat retinopathy stadium 2. Treatment anti-VEGF injection rutin di Visi sudah 2 tahun, kondisi stabil. Senang ada klinik yang treat saya seperti partner, bukan sekadar pasien."',
+    quote:
+      '"Diabetic 15 tahun, dapat retinopathy stadium 2. Treatment anti-VEGF injection rutin di Visi sudah 2 tahun, kondisi stabil. Senang ada klinik yang treat saya seperti partner, bukan sekadar pasien."',
     by: 'Pak Bambang, 58 tahun',
-    m: 'B',
+    initial: 'B',
   },
 ];
 
@@ -268,29 +298,29 @@ const faq = [
 ];
 
 const cities = [
-  { n: 'Jakarta Selatan', img: 35581806, alt: 'Deretan gedung Jakarta saat matahari terbenam' },
-  { n: 'Jakarta Pusat', img: 7361776, alt: 'Pemandangan udara Monumen Nasional di Jakarta' },
-  { n: 'BSD, Tangerang', img: 30496412, alt: 'Fasad kaca gedung modern' },
-  { n: 'Bekasi', img: 14792540, alt: 'Jalan ramai dengan sepeda motor di kota Indonesia' },
-  { n: 'Surabaya', img: 29321001, alt: 'Jalan Pecinan Surabaya di malam hari dengan papan neon' },
+  { name: 'Jakarta Selatan', img: 35581806, alt: 'Deretan gedung Jakarta saat matahari terbenam' },
+  { name: 'Jakarta Pusat', img: 7361776, alt: 'Pemandangan udara Monumen Nasional di Jakarta' },
+  { name: 'BSD, Tangerang', img: 30496412, alt: 'Fasad kaca gedung modern' },
+  { name: 'Bekasi', img: 14792540, alt: 'Jalan ramai dengan sepeda motor di kota Indonesia' },
+  { name: 'Surabaya', img: 29321001, alt: 'Jalan Pecinan Surabaya di malam hari dengan papan neon' },
 ];
 
 const lasik = [
   {
-    t: 'PRK',
-    p: 'Rp 12 jt / mata',
-    l: ['Untuk kornea tipis', 'Hasil permanen', 'Recovery 5–7 hari', 'Minus -1 s/d -10'],
+    name: 'PRK',
+    price: 'Rp 12 jt / mata',
+    items: ['Untuk kornea tipis', 'Hasil permanen', 'Recovery 5–7 hari', 'Minus -1 s/d -10'],
   },
   {
-    t: 'Femto-LASIK',
-    p: 'Rp 15 jt / mata',
+    name: 'Femto-LASIK',
+    price: 'Rp 15 jt / mata',
     pop: true,
-    l: ['Wavelight FS200 femtosecond', '100% blade-free', 'Recovery 24–48 jam', 'Minus -1 s/d -10'],
+    items: ['Wavelight FS200 femtosecond', '100% blade-free', 'Recovery 24–48 jam', 'Minus -1 s/d -10'],
   },
   {
-    t: 'SMILE',
-    p: 'Rp 25 jt / mata',
-    l: ['Small incision, minimal invasif', 'Recovery lebih cepat', 'Cocok lifestyle aktif', 'Minus -1 s/d -10'],
+    name: 'SMILE',
+    price: 'Rp 25 jt / mata',
+    items: ['Small incision, minimal invasif', 'Recovery lebih cepat', 'Cocok lifestyle aktif', 'Minus -1 s/d -10'],
   },
 ];
 ---
@@ -501,13 +531,13 @@ const lasik = [
             </h2>
             <p class="lede">Dari refraksi ringan hingga kondisi retina kompleks — semua dalam satu klinik.</p>
             <div class="cond__list">
-              {conditions.map((c) => (
+              {conditions.map((condition) => (
                 <div class="cond__item">
-                  <Photo id={c.img} w={200} cls="r-circle frame--ring" pos={c.pos} alt="" />
-                  <h3>{c.t}</h3>
+                  <Photo id={condition.img} w={200} cls="r-circle frame--ring" pos={condition.pos} alt="" />
+                  <h3>{condition.title}</h3>
                   <ul>
-                    {c.l.map((x) => (
-                      <li>{x}</li>
+                    {condition.items.map((item) => (
+                      <li>{item}</li>
                     ))}
                   </ul>
                 </div>
@@ -527,16 +557,16 @@ const lasik = [
             <p class="lede">Dari pemeriksaan rutin hingga prosedur bedah — semua dalam satu atap.</p>
           </div>
           <div class="svc">
-            {services.map((s) => (
+            {services.map((service) => (
               <article class="svc__it">
-                <Photo id={s.img} w={640} cls={`${s.r} frame--ring`} alt={s.alt} />
-                <h3>{s.t}</h3>
+                <Photo id={service.img} w={640} cls={`${service.shape} frame--ring`} alt={service.alt} />
+                <h3>{service.title}</h3>
                 <ul>
-                  {s.l.map((x) => (
-                    <li>{x}</li>
+                  {service.items.map((item) => (
+                    <li>{item}</li>
                   ))}
                 </ul>
-                <p class="svc__price num">{s.p}</p>
+                <p class="svc__price num">{service.price}</p>
               </article>
             ))}
           </div>
@@ -575,18 +605,18 @@ const lasik = [
               />
             </div>
             <div>
-              {lasik.map((x) => (
+              {lasik.map((tier) => (
                 <div class="tier">
-                  {x.pop && <span class="tier__pop">Paling Populer</span>}
+                  {tier.pop && <span class="tier__pop">Paling Populer</span>}
                   <div>
-                    <h3>{x.t}</h3>
-                    <p class="tier__price num">{x.p}</p>
+                    <h3>{tier.name}</h3>
+                    <p class="tier__price num">{tier.price}</p>
                   </div>
                   <ul>
-                    {x.l.map((y) => (
+                    {tier.items.map((item) => (
                       <li>
                         <i class="ph-bold ph-check" aria-hidden="true"></i>
-                        {y}
+                        {item}
                       </li>
                     ))}
                   </ul>
@@ -595,8 +625,8 @@ const lasik = [
               <div class="diopter" role="img" aria-label="Rentang koreksi minus 1 sampai minus 10 dioptri">
                 <p class="diopter__cap">Rentang minus yang dapat dikoreksi (dioptri)</p>
                 <div class="diopter__scale num" aria-hidden="true">
-                  {['-1', '-2', '-3', '-4', '-5', '-6', '-7', '-8', '-9', '-10'].map((d) => (
-                    <span>{d}</span>
+                  {['-1', '-2', '-3', '-4', '-5', '-6', '-7', '-8', '-9', '-10'].map((value) => (
+                    <span>{value}</span>
                   ))}
                 </div>
               </div>
@@ -641,14 +671,20 @@ const lasik = [
             <p class="lede">Semua bersertifikat Sp.M, beberapa dengan sub-spesialisasi lanjutan.</p>
           </div>
           <div class="docs">
-            {doctors.map((d) => (
+            {doctors.map((doctor) => (
               <article class="doc">
-                <Photo id={d.img} w={560} cls="r-arch frame--ring" pos="50% 20%" alt={`${d.n} — foto ilustrasi`} />
-                <h3>{d.n}</h3>
-                <p class="doc__spec">{d.s}</p>
+                <Photo
+                  id={doctor.img}
+                  w={560}
+                  cls="r-arch frame--ring"
+                  pos="50% 20%"
+                  alt={`${doctor.name} — foto ilustrasi`}
+                />
+                <h3>{doctor.name}</h3>
+                <p class="doc__spec">{doctor.specialty}</p>
                 <p class="doc__sch">
                   <i class="ph-bold ph-calendar-blank" aria-hidden="true"></i>
-                  {d.d}
+                  {doctor.schedule}
                 </p>
               </article>
             ))}
@@ -696,12 +732,12 @@ const lasik = [
               />
             </div>
             <div>
-              {tech.map((t) => (
+              {tech.map((device) => (
                 <div class="tech__row">
-                  <i class={`ph-bold ph-${t.icon}`} aria-hidden="true"></i>
-                  <h3>{t.n}</h3>
-                  <span class="tech__brand">{t.b}</span>
-                  <p>{t.d}</p>
+                  <i class={`ph-bold ph-${device.icon}`} aria-hidden="true"></i>
+                  <h3>{device.name}</h3>
+                  <span class="tech__brand">{device.brand}</span>
+                  <p>{device.description}</p>
                 </div>
               ))}
             </div>
@@ -796,11 +832,11 @@ const lasik = [
                 </tr>
               </thead>
               <tbody>
-                {prices.map((p) => (
+                {prices.map(([service, price, note]) => (
                   <tr>
-                    <td>{p[0]}</td>
-                    <td class="p">{p[1]}</td>
-                    <td class="n">{p[2]}</td>
+                    <td>{service}</td>
+                    <td class="p">{price}</td>
+                    <td class="n">{note}</td>
                   </tr>
                 ))}
               </tbody>
@@ -843,12 +879,12 @@ const lasik = [
             <p class="lede">Deteksi dini menyelamatkan penglihatan — untuk semua usia.</p>
           </div>
           <div class="when">
-            {when.map((w) => (
+            {when.map((age) => (
               <div class="when__it">
-                <Photo id={w.img} w={360} cls="r-circle frame--ring" alt={w.alt} />
-                <h3>{w.t}</h3>
-                <p class="when__int">{w.i}</p>
-                <p>{w.d}</p>
+                <Photo id={age.img} w={360} cls="r-circle frame--ring" alt={age.alt} />
+                <h3>{age.title}</h3>
+                <p class="when__int">{age.interval}</p>
+                <p>{age.description}</p>
               </div>
             ))}
             <div class="when__it when__it--sos">
@@ -938,17 +974,17 @@ const lasik = [
             </div>
           </div>
           <div class="testi__grid">
-            {testi.map((t) => (
+            {testi.map((story) => (
               <figure class="testi__it">
                 <div class="mono" aria-hidden="true">
-                  {t.m}
+                  {story.initial}
                 </div>
                 <blockquote>
-                  <p>{t.q}</p>
+                  <p>{story.quote}</p>
                 </blockquote>
                 <figcaption>
-                  <span class="tag">{t.tag}</span>
-                  <small>{t.by}</small>
+                  <span class="tag">{story.tag}</span>
+                  <small>{story.by}</small>
                 </figcaption>
               </figure>
             ))}
@@ -980,13 +1016,13 @@ const lasik = [
               Pertanyaan <em>Umum</em>
             </h2>
             <div>
-              {faq.map(([q, a]) => (
+              {faq.map(([question, answer]) => (
                 <details name="faq">
                   <summary>
-                    {q}
+                    {question}
                     <i class="ph-bold ph-plus" aria-hidden="true"></i>
                   </summary>
-                  <p class="faq__a">{a}</p>
+                  <p class="faq__a">{answer}</p>
                 </details>
               ))}
             </div>
@@ -1087,10 +1123,10 @@ const lasik = [
     <footer id="lokasi" class="foot" aria-label="Footer">
       <div class="wrap">
         <div class="foot__cities" aria-label="Cabang">
-          {cities.map((c) => (
+          {cities.map((city) => (
             <div class="city">
-              <Photo id={c.img} w={360} cls="r-circle frame--ring" alt={c.alt} />
-              <p>{c.n}</p>
+              <Photo id={city.img} w={360} cls="r-circle frame--ring" alt={city.alt} />
+              <p>{city.name}</p>
             </div>
           ))}
         </div>
