@@ -5,7 +5,7 @@
   --raised: #efe9df;
   --ink: #1f1b16;
   --ink-2: #5e554a;
-  --ink-3: #7b7266;
+  --ink-3: #6f665a;
   --hair: rgba(31, 27, 22, 0.1);
   --accent: #0d6b66;
   --accent-hover: #0a5753;
@@ -280,7 +280,7 @@ h3 {
   --tick: var(--hair);
   height: 12px;
   background:
-    repeating-linear-gradient(90deg, var(--tick) 0 1px, transparent 1px 12px) bottom / 100% 6px no-repeat,
+    repeating-linear-gradient(90deg, var(--tick) 0 1px, transparent 1px 12px) bottom / 100% 8px no-repeat,
     repeating-linear-gradient(90deg, var(--tick) 0 1px, transparent 1px 60px) bottom / 100% 12px no-repeat;
 }
 .dark .ruler {
@@ -312,7 +312,6 @@ h3 {
   align-items: center;
   gap: 8px;
   font: 600 17px/1 var(--sans);
-  letter-spacing: -0.01em;
   white-space: nowrap;
 }
 .nav__logo svg {
@@ -542,7 +541,7 @@ h3 {
 }
 .svc__it .ph {
   aspect-ratio: 4 / 3;
-  border-radius: var(--r-m);
+  border-radius: var(--r-s);
   margin-bottom: 16px;
 }
 .svc__it h3,
@@ -681,7 +680,7 @@ h3 {
 }
 .lasik__foot li .icon {
   color: var(--d-accent);
-  margin-top: 3px;
+  margin-top: 4px;
 }
 .lasik__cta p {
   font-size: 13px;
@@ -930,7 +929,7 @@ h3 {
 }
 .when__it .ph {
   aspect-ratio: 3 / 2;
-  border-radius: var(--r-m);
+  border-radius: var(--r-s);
   margin-bottom: 16px;
 }
 .when__it > :not(.ph) {
@@ -1024,7 +1023,6 @@ h3 {
 }
 .testi__q {
   font: 400 clamp(24px, 2.8vw, 34px) / 1.3 var(--serif);
-  letter-spacing: -0.01em;
   text-wrap: balance;
 }
 .testi__by {
@@ -1242,7 +1240,6 @@ h3 {
 }
 .foot__brand {
   font: 600 20px/1.2 var(--sans);
-  letter-spacing: -0.01em;
 }
 .foot__tag {
   color: var(--accent);
