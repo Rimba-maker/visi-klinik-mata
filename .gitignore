@@ -28,5 +28,6 @@ Thumbs.db
 /PRODUCT.md
 
 # Local tooling state
-.claude/
+.claude/*
+!.claude/skills/
 .impeccable/
