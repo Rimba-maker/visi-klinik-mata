@@ -8,265 +8,259 @@ const conditions = [
   {
     img: 1486641,
     pos: '50% 50%',
-    title: 'Refraction Errors',
+    title: 'Kelainan refraksi',
     items: ['Minus (myopia)', 'Plus (hyperopia)', 'Silinder (astigmatism)', 'Presbyopia (mata tua)'],
   },
   {
     img: 30896215,
     pos: '50% 50%',
-    title: 'Myopia Control Anak',
-    items: ['Atropine drops', 'Ortho-K lens malam', 'MiSight contact lens'],
+    title: 'Myopia control anak',
+    items: ['Tetes atropine', 'Lensa Ortho-K malam', 'MiSight contact lens'],
   },
   {
     img: 4127849,
     pos: '50% 50%',
     title: 'Katarak',
-    items: ['Phacoemulsification', 'Multifokal IOL implant', 'Day-surgery, recovery cepat'],
+    items: ['Phacoemulsification', 'Multifokal IOL implant', 'Rawat jalan, pemulihan cepat'],
   },
   {
     img: 34491619,
     pos: '50% 50%',
     title: 'Glaukoma',
-    items: ['Early detection (IOP)', 'Medication & surgery', 'Lifetime monitoring'],
+    items: ['Deteksi dini (IOP)', 'Obat dan operasi', 'Pemantauan seumur hidup'],
   },
   {
     img: 946727,
     pos: '50% 50%',
-    title: 'Diabetic Retinopathy',
-    items: ['Screening diabetic patient', 'Laser & injection', 'Anti-VEGF therapy'],
+    title: 'Retinopati diabetik',
+    items: ['Skrining pasien diabetes', 'Laser dan injeksi', 'Terapi anti-VEGF'],
   },
   {
     img: 6660871,
     pos: '50% 30%',
-    title: 'Dry Eye Syndrome',
-    items: ['Computer vision syndrome', 'Meibomian gland dysfunction', 'IPL therapy & punctal plug'],
+    title: 'Sindrom mata kering',
+    items: ['Sindrom penglihatan komputer', 'Disfungsi kelenjar meibom', 'Terapi IPL dan punctal plug'],
   },
   {
     img: 8949024,
     pos: '50% 55%',
-    title: 'Strabismus (Mata Juling)',
-    items: ['Pada anak & dewasa', 'Bedah otot mata', 'Vision therapy'],
+    title: 'Strabismus (mata juling)',
+    items: ['Pada anak dan dewasa', 'Bedah otot mata', 'Terapi penglihatan'],
   },
   {
     img: 977601,
     pos: '50% 40%',
-    title: 'Floater & Retinal Detachment',
-    items: ['Posterior vitreous detachment', 'Retinal tear & detachment', 'Vitrectomy surgery'],
+    title: 'Floater dan ablasio retina',
+    items: ['Ablasio vitreus posterior', 'Robekan dan ablasio retina', 'Bedah vitrektomi'],
   },
 ];
 
 const services = [
   {
-    title: 'Pemeriksaan Komprehensif',
-    items: ['Refraction test (auto refraktor)', 'Tonometry (tekanan IOP)', 'Slit lamp examination', 'Funduscopy'],
-    price: 'Rp 250k – 500k',
+    title: 'Pemeriksaan komprehensif',
+    items: ['Tes refraksi (auto refraktor)', 'Tonometry (tekanan IOP)', 'Pemeriksaan slit lamp', 'Funduscopy'],
+    price: 'Rp 250 rb – 500 rb',
     img: 6749727,
-    shape: 'r-arch',
     alt: 'Optometris memasang trial frame untuk tes refraksi pada pasien',
   },
   {
-    title: 'Lasik & Refractive Surgery',
-    items: ['Femto-LASIK (Wavelight FS200)', 'SMILE (no-blade)', 'PRK (kornea tipis)'],
+    title: 'Lasik dan bedah refraktif',
+    items: ['Femto-LASIK (Wavelight FS200)', 'SMILE (tanpa pisau)', 'PRK (kornea tipis)'],
     price: 'Mulai Rp 15 jt / mata',
-    img: 7580252,
-    shape: 'r-oval',
-    alt: 'Dokter memeriksa mata pasien dengan penlight sebelum prosedur refraktif',
+    img: 5752287,
+    alt: 'Dokter memeriksa penglihatan pasien dengan phoropter sebelum konsultasi Lasik',
   },
   {
-    title: 'Cataract Surgery',
-    items: ['Phacoemulsification', 'IOL implant (mono, multifokal, toric)', 'Day surgery 20 menit'],
+    title: 'Operasi katarak',
+    items: ['Phacoemulsification', 'Implan IOL (mono, multifokal, toric)', 'Rawat jalan 20 menit'],
     price: 'Mulai Rp 8 jt / mata',
-    img: 6291088,
-    shape: 'r-leaf',
-    alt: 'Tim bedah dan instrumen steril di ruang operasi',
+    img: 31000573,
+    alt: 'Tim bedah mata bekerja di bawah mikroskop operasi',
   },
   {
-    title: 'Retina Treatment',
-    items: ['Anti-VEGF injection', 'Retinal laser', 'Vitrectomy'],
-    price: 'Mulai Rp 3 – 15 jt',
+    title: 'Terapi retina',
+    items: ['Injeksi anti-VEGF', 'Laser retina', 'Vitrektomi'],
+    price: 'Mulai Rp 3 jt',
     img: 3732993,
-    shape: 'r-squircle',
     alt: 'Close-up mata hitam putih dengan detail iris dan pupil',
   },
   {
-    title: 'Pediatric Ophthalmology',
-    items: ['Mata juling & amblyopia', 'Myopia control anak', 'Kacamata anak'],
-    price: 'Konsultasi Rp 350k',
-    img: 11749499,
-    shape: 'r-oval',
-    alt: 'Remaja berkacamata tertawa di ayunan',
+    title: 'Mata anak',
+    items: ['Mata juling dan amblyopia', 'Myopia control anak', 'Kacamata anak'],
+    price: 'Konsultasi Rp 350 rb',
+    img: 6749792,
+    alt: 'Dokter memeriksa mata anak dengan slit lamp',
   },
   {
-    title: 'Glaukoma Management',
-    items: ['Pemeriksaan tekanan IOP', 'OCT optic nerve', 'Visual field test'],
-    price: 'Mulai Rp 500k',
-    img: 6153020,
-    shape: 'r-arch',
-    alt: 'Close-up mata cokelat dengan bulu mata',
+    title: 'Penanganan glaukoma',
+    items: ['Pemeriksaan tekanan IOP', 'OCT optic nerve', 'Tes lapang pandang'],
+    price: 'Mulai Rp 500 rb',
+    img: 5752281,
+    alt: 'Pasien menjalani pemeriksaan slit lamp untuk glaukoma',
   },
   {
-    title: 'Dry Eye Clinic',
-    items: ['LipiView assessment', 'IPL therapy', 'Punctal plug'],
+    title: 'Klinik mata kering',
+    items: ['Asesmen LipiView', 'Terapi IPL', 'Punctal plug'],
     price: 'Mulai Rp 1 jt',
     img: 8867225,
-    shape: 'r-leaf',
     alt: 'Pekerja kantoran mengusap mata yang lelah',
   },
   {
-    title: 'Optical Shop In-House',
-    items: ['Frame premium & affordable', 'Lensa Zeiss, Essilor, Hoya', 'Contact lens fitting'],
-    price: 'One-stop solution',
-    img: 5766564,
-    shape: 'r-squircle',
-    alt: 'Rak dinding berisi ratusan frame kacamata',
+    title: 'Optical shop di klinik',
+    items: ['Frame premium dan terjangkau', 'Lensa Zeiss, Essilor, Hoya', 'Fitting lensa kontak'],
+    price: 'Satu atap dengan klinik',
+    img: 5766154,
+    alt: 'Perempuan mencoba kacamata dibantu optometris di optical shop',
   },
 ];
 
 const doctors = [
   {
     name: 'dr. Andreas Hartono, Sp.M(K)',
-    specialty: 'Lasik & Refractive Surgery',
+    specialty: 'Lasik dan bedah refraktif',
     schedule: 'Senin · Rabu · Jumat',
     img: 4173239,
   },
   {
     name: 'dr. Sari Wulandari, Sp.M',
-    specialty: 'Pediatric Ophthalmology',
+    specialty: 'Mata anak',
     schedule: 'Selasa · Kamis · Sabtu',
     img: 5327580,
   },
   {
     name: 'dr. Reza Pratama, Sp.M(K)',
-    specialty: 'Vitreoretinal Surgery',
+    specialty: 'Bedah vitreoretina',
     schedule: 'Senin · Selasa · Kamis',
     img: 5452268,
   },
   {
     name: 'dr. Maya Setiawati, Sp.M',
-    specialty: 'Cataract & Anterior Segment',
+    specialty: 'Katarak dan segmen anterior',
     schedule: 'Rabu · Jumat · Sabtu',
     img: 8376309,
   },
-  { name: 'dr. Linda Wijaya, Sp.M(K)', specialty: 'Oculoplastic Surgery', schedule: 'Selasa · Jumat', img: 15641079 },
-  { name: 'dr. Nina Indriani, Sp.M', specialty: 'General Ophthalmology', schedule: 'Setiap hari kerja', img: 5998474 },
+  { name: 'dr. Linda Wijaya, Sp.M(K)', specialty: 'Bedah okuloplastik', schedule: 'Selasa · Jumat', img: 15641079 },
+  { name: 'dr. Nina Indriani, Sp.M', specialty: 'Mata umum', schedule: 'Setiap hari kerja', img: 5998474 },
   {
     name: 'dr. Tika Larasati, Sp.M',
-    specialty: 'Dry Eye & Ocular Surface',
+    specialty: 'Mata kering dan permukaan okular',
     schedule: 'Rabu · Jumat · Sabtu',
-    img: 6749773,
+    img: 32669711,
   },
 ];
 
 const tech: { icon: IconName; name: string; brand: string; description: string }[] = [
   {
     icon: 'scan',
-    name: 'OCT — Optical Coherence Tomography',
+    name: 'OCT (Optical Coherence Tomography)',
     brand: 'Heidelberg Spectralis',
-    description: 'Imaging retina & optic nerve resolusi tinggi untuk diagnosis akurat glaukoma dan retinopathy.',
+    description:
+      'Pencitraan retina dan saraf optik resolusi tinggi untuk diagnosis glaukoma dan retinopati yang akurat.',
   },
   {
     icon: 'lightning',
     name: 'Wavelight FS200 + EX500',
     brand: 'Alcon (US)',
     description:
-      'Platform Lasik kelas dunia. Blade-free femtosecond laser, akurasi submikron untuk Femto-LASIK & SMILE.',
+      'Platform Lasik kelas dunia. Laser femtosecond tanpa pisau, akurasi submikron untuk Femto-LASIK dan SMILE.',
   },
   {
     icon: 'target',
-    name: 'Auto Refractor & Corneal Topography',
+    name: 'Auto refractor dan topografi kornea',
     brand: 'Nidek / Zeiss',
-    description: 'Pemeriksaan refraksi akurat & mapping kornea untuk menentukan Lasik eligibility.',
+    description: 'Pemeriksaan refraksi akurat dan pemetaan kornea untuk menentukan kelayakan Lasik.',
   },
   {
     icon: 'drop',
-    name: 'LipiView & LipiFlow',
+    name: 'LipiView dan LipiFlow',
     brand: 'TearScience',
-    description: 'Diagnostic & treatment dry eye dari root cause meibomian gland dysfunction secara non-invasif.',
+    description:
+      'Diagnosis dan terapi mata kering dari akar masalahnya, disfungsi kelenjar meibom, secara non-invasif.',
   },
   {
     icon: 'chart-bar',
-    name: 'Visual Field Analyzer',
+    name: 'Analisis lapang pandang',
     brand: 'Humphrey HFA3',
     description: 'Standar emas deteksi glaukoma. Tersedia di seluruh cabang Visi Klinik Mata.',
   },
   {
     icon: 'syringe',
-    name: 'Phacoemulsification Unit',
+    name: 'Unit fakoemulsifikasi',
     brand: 'Centurion Alcon',
-    description: 'Surgery katarak presisi tinggi dengan teknologi Intelligent Phaco untuk recovery lebih cepat.',
+    description: 'Operasi katarak presisi tinggi dengan teknologi Intelligent Phaco untuk pemulihan lebih cepat.',
   },
 ];
 
 const prices = [
-  ['Pemeriksaan komprehensif', 'Rp 250k – 500k', 'Termasuk konsultasi Sp.M'],
-  ['Konsultasi Sp.M', 'Rp 250k – 400k', 'Per visit'],
-  ['Lasik Femto-LASIK', 'Rp 15 jt / mata', 'Free konsultasi eligibility'],
-  ['Lasik SMILE', 'Rp 25 jt / mata', 'Free konsultasi eligibility'],
-  ['Cataract surgery + IOL monofokal', 'Rp 8 – 12 jt / mata', '—'],
-  ['Cataract surgery + IOL multifokal', 'Rp 15 – 25 jt / mata', '—'],
-  ['Anti-VEGF injection', 'Rp 3 – 6 jt / sesi', '—'],
-  ['Glaukoma surgery', 'Rp 10 – 20 jt', '—'],
-  ['OCT scan', 'Rp 600k – 900k', '—'],
+  ['Pemeriksaan komprehensif', 'Rp 250 rb – 500 rb', 'Termasuk konsultasi Sp.M'],
+  ['Konsultasi Sp.M', 'Rp 250 rb – 400 rb', 'Per kunjungan'],
+  ['Femto-LASIK', 'Rp 15 jt / mata', 'Gratis tes kelayakan'],
+  ['SMILE', 'Rp 25 jt / mata', 'Gratis tes kelayakan'],
+  ['Operasi katarak + IOL monofokal', 'Rp 8 – 12 jt / mata', '—'],
+  ['Operasi katarak + IOL multifokal', 'Rp 15 – 25 jt / mata', '—'],
+  ['Injeksi anti-VEGF', 'Rp 3 – 6 jt / sesi', '—'],
+  ['Operasi glaukoma', 'Rp 10 – 20 jt', '—'],
+  ['Pemindaian OCT', 'Rp 600 rb – 900 rb', '—'],
 ];
 
 const when = [
   {
-    title: 'Anak 3–6 Tahun',
-    interval: 'Sebelum Masuk Sekolah',
-    description: 'Deteksi mata juling & refraction error sebelum berdampak pada tumbuh kembang anak.',
+    title: 'Anak 3–6 tahun',
+    interval: 'Sebelum masuk sekolah',
+    description: 'Deteksi mata juling dan kelainan refraksi sebelum berdampak pada tumbuh kembang anak.',
     img: 27467920,
     alt: 'Anak perempuan tersenyum lebar',
   },
   {
-    title: 'Usia Sekolah & Remaja',
-    interval: 'Setiap 1–2 Tahun',
-    description: 'Terutama jika banyak menggunakan HP/komputer. Monitor myopia progression rutin.',
+    title: 'Usia sekolah dan remaja',
+    interval: 'Setiap 1–2 tahun',
+    description: 'Terutama jika banyak menggunakan HP/komputer. Pantau perkembangan minus secara rutin.',
     img: 10933119,
     alt: 'Perempuan muda berkacamata tersenyum',
   },
   {
-    title: 'Dewasa 20–40 Tahun',
-    interval: 'Setiap 2 Tahun',
-    description: 'Setiap tahun jika pakai kacamata/lensa kontak. Cegah computer vision syndrome.',
+    title: 'Dewasa 20–40 tahun',
+    interval: 'Setiap 2 tahun',
+    description: 'Setiap tahun jika pakai kacamata/lensa kontak. Cegah sindrom penglihatan komputer.',
     img: 6345331,
     alt: 'Pria bekerja di depan laptop sambil memegang wajah',
   },
   {
-    title: 'Lansia 40+ Tahun',
-    interval: 'Setiap Tahun',
+    title: 'Usia 40 tahun ke atas',
+    interval: 'Setiap tahun',
     description: 'Risiko presbyopia, katarak, dan glaukoma meningkat signifikan. Deteksi dini kunci penanganan.',
     img: 5637591,
     alt: 'Pasangan lansia membaca koran bersama di bangku',
   },
   {
-    title: 'Diabetic Patient',
-    interval: 'Setiap 6–12 Bulan',
+    title: 'Penderita diabetes',
+    interval: 'Setiap 6–12 bulan',
     description:
-      'Diabetes adalah faktor risiko utama eye disease. Screening diabetic retinopathy rutin sangat dianjurkan.',
-    img: 5996744,
-    alt: 'Kacamata di atas kartu tes ketajaman penglihatan',
+      'Diabetes adalah faktor risiko utama penyakit mata. Skrining retinopati diabetik secara rutin sangat dianjurkan.',
+    img: 8413300,
+    alt: 'Dokter berbicara dengan pasien lansia di ruang periksa',
   },
 ];
 
 const testi = [
   {
-    tag: 'Cataract Surgery',
+    tag: 'Operasi katarak',
     quote:
-      '"Mama saya 68 tahun, katarak bilateral. Surgery di Visi pakai IOL multifokal, sekarang bisa baca koran tanpa kacamata baca. Tetangga sampai nanya operasi di mana."',
+      '"Mama saya 68 tahun, katarak bilateral. Operasi di Visi pakai IOL multifokal, sekarang bisa baca koran tanpa kacamata baca. Tetangga sampai nanya operasi di mana."',
     by: 'Bu Nina, anak pasien katarak',
     initial: 'N',
   },
   {
-    tag: 'Pediatric Ophthalmology',
+    tag: 'Mata anak',
     quote:
       '"Anak saya 7 tahun didiagnosis amblyopia (lazy eye). dr. Sari sabar handle anak, kasih plan vision therapy 6 bulan. Hasilnya signifikan dan anak jadi lebih percaya diri."',
     by: 'Pak Bayu, ayah pasien anak',
     initial: 'B',
   },
   {
-    tag: 'Diabetic Retinopathy',
+    tag: 'Retinopati diabetik',
     quote:
-      '"Diabetic 15 tahun, dapat retinopathy stadium 2. Treatment anti-VEGF injection rutin di Visi sudah 2 tahun, kondisi stabil. Senang ada klinik yang treat saya seperti partner, bukan sekadar pasien."',
+      '"Saya diabetes sudah 15 tahun, kena retinopati stadium 2. Injeksi anti-VEGF rutin di Visi sudah 2 tahun, kondisi stabil. Senang ada klinik yang memperlakukan saya seperti mitra, bukan sekadar pasien."',
     by: 'Pak Bambang, 58 tahun',
     initial: 'B',
   },
@@ -275,27 +269,27 @@ const testi = [
 const faq = [
   [
     'Lasik aman tidak?',
-    'Lasik adalah prosedur yang sudah dilakukan jutaan kali worldwide dengan safety record tinggi. Risiko minor sangat minimal jika dilakukan dokter berpengalaman dengan peralatan modern seperti Wavelight FS200.',
+    'Lasik adalah prosedur yang sudah dilakukan jutaan kali di seluruh dunia dengan rekam keselamatan tinggi. Risikonya sangat minimal jika dilakukan dokter berpengalaman dengan peralatan modern seperti Wavelight FS200.',
   ],
   [
     'Setelah Lasik, mata bisa minus lagi?',
-    'Hasil Lasik permanen untuk kondisi refraksi saat ini. Namun presbyopia (mata tua) tetap bisa terjadi pada usia 40+ — ini proses alami aging yang tidak berkaitan dengan prosedur Lasik.',
+    'Hasil Lasik permanen untuk kondisi refraksi saat ini. Namun presbyopia (mata tua) tetap bisa terjadi pada usia 40+ — ini proses penuaan alami yang tidak berkaitan dengan prosedur Lasik.',
   ],
   [
     'Operasi katarak BPJS, caranya bagaimana?',
-    'BPJS menanggung biaya phacoemulsification + IOL monofokal standar. Upgrade ke IOL multifokal/toric dikenakan biaya tambahan pribadi. Pasien perlu rujukan dari faskes tingkat pertama (FKTP) terlebih dahulu.',
+    'BPJS menanggung biaya phacoemulsification + IOL monofokal standar. Peningkatan ke IOL multifokal/toric dikenakan biaya tambahan pribadi. Pasien perlu rujukan dari faskes tingkat pertama (FKTP) terlebih dahulu.',
   ],
   [
     'Anak myopia, harus pakai kacamata?',
     'Tergantung tingkat minusnya. Minus di bawah -1 mungkin tidak perlu full-time. Dokter pediatric ophthalmology akan membuat rencana yang paling sesuai — termasuk opsi myopia control seperti Ortho-K atau MiSight.',
   ],
   [
-    'Dry eye bisa sembuh total?',
-    'Dry eye bisa dikelola (managed) dengan sangat baik — tidak selalu "sembuh" 100% tergantung penyebabnya. IPL therapy sangat efektif untuk meibomian gland dysfunction dan memberikan perbaikan jangka panjang.',
+    'Mata kering bisa sembuh total?',
+    'Mata kering bisa dikelola dengan sangat baik, tetapi tidak selalu "sembuh" 100% karena bergantung pada penyebabnya. Terapi IPL sangat efektif untuk disfungsi kelenjar meibom dan memberi perbaikan jangka panjang.',
   ],
   [
     'Bisa langsung fitting kacamata setelah periksa?',
-    'Ya. Optical shop in-clinic tersedia di setiap cabang. Setelah pemeriksaan, langsung fitting kacamata atau contact lens — frame premium (Ray-Ban, Oakley) maupun affordable, dengan lensa Zeiss, Essilor, dan Hoya.',
+    'Ya. Optical shop tersedia di setiap cabang. Setelah pemeriksaan, langsung fitting kacamata atau lensa kontak, dengan frame premium (Ray-Ban, Oakley) maupun yang terjangkau, serta lensa Zeiss, Essilor, dan Hoya.',
   ],
 ];
 
@@ -311,18 +305,18 @@ const lasik = [
   {
     name: 'PRK',
     price: 'Rp 12 jt / mata',
-    items: ['Untuk kornea tipis', 'Hasil permanen', 'Recovery 5–7 hari', 'Minus -1 s/d -10'],
+    items: ['Untuk kornea tipis', 'Hasil permanen', 'Pemulihan 5–7 hari', 'Minus -1 s/d -10'],
   },
   {
     name: 'Femto-LASIK',
     price: 'Rp 15 jt / mata',
     pop: true,
-    items: ['Wavelight FS200 femtosecond', '100% blade-free', 'Recovery 24–48 jam', 'Minus -1 s/d -10'],
+    items: ['Wavelight FS200 femtosecond', '100% tanpa pisau', 'Pemulihan 24–48 jam', 'Minus -1 s/d -10'],
   },
   {
     name: 'SMILE',
     price: 'Rp 25 jt / mata',
-    items: ['Small incision, minimal invasif', 'Recovery lebih cepat', 'Cocok lifestyle aktif', 'Minus -1 s/d -10'],
+    items: ['Sayatan kecil, minimal invasif', 'Pemulihan lebih cepat', 'Cocok lifestyle aktif', 'Minus -1 s/d -10'],
   },
 ];
 ---
@@ -332,43 +326,46 @@ const lasik = [
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Visi Klinik Mata — Klinik Mata Spesialis Jakarta, Lasik & Katarak</title>
+    <title>Visi Klinik Mata — Klinik mata spesialis Jakarta, Lasik dan katarak</title>
     <meta
       name="description"
-      content="Klinik mata spesialis dengan 15+ dokter Sp.M. Lasik Wavelight FS200, operasi katarak, treatment retina, mata anak, glaukoma. 5 cabang Jabodetabek + Surabaya."
+      content="Klinik mata spesialis dengan 15+ dokter Sp.M. Lasik Wavelight FS200, operasi katarak, terapi retina, mata anak, glaukoma. 5 cabang Jabodetabek dan Surabaya."
     />
-    <meta property="og:title" content="Visi Klinik Mata — Klinik Mata Spesialis" />
+    <meta property="og:title" content="Visi Klinik Mata — Klinik mata spesialis" />
     <meta
       property="og:description"
-      content="Lasik, katarak, glaukoma, dry eye, pediatric ophthalmology. 15+ Sp.M bersertifikat. 5 cabang Jabodetabek + Surabaya."
+      content="Lasik, katarak, glaukoma, mata kering, mata anak. 15+ Sp.M bersertifikat. 5 cabang Jabodetabek dan Surabaya."
     />
     <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://images.pexels.com/photos/6749697/pexels-photo-6749697.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    />
+    <meta name="theme-color" content="#f7f4ee" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://images.pexels.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Marcellus&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <!-- almond (eye) clip shape, used by Photo almond -->
-    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
-      <defs>
-        <clipPath id="almond" clipPathUnits="objectBoundingBox">
-          <path d="M0,0.5 C0.2,0.02 0.8,0.02 1,0.5 C0.8,0.98 0.2,0.98 0,0.5Z" />
-        </clipPath>
-      </defs>
-    </svg>
-
     <!-- ─── NAVBAR ─── -->
     <nav class="nav" aria-label="Navigasi utama">
       <div class="nav__in">
         <a href="#top" class="nav__logo">
-          <svg width="26" height="26" viewBox="0 0 26 26" fill="none" stroke="currentColor" aria-hidden="true">
-            <circle cx="13" cy="13" r="12" />
-            <circle cx="13" cy="13" r="6" />
-            <circle cx="13" cy="13" r="1.8" fill="currentColor" stroke="none" />
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            aria-hidden="true"
+          >
+            <path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z" />
+            <circle cx="12" cy="12" r="3" fill="currentColor" stroke="none" />
           </svg>
           Visi Klinik Mata
         </a>
@@ -389,9 +386,9 @@ const lasik = [
             <a href="#lokasi">Lokasi</a>
           </li>
         </ul>
-        <a href="#booking" class="btn btn-primary">
-          <Icon name="calendar-blank" />
-          Book Pemeriksaan
+        <a href="#booking" class="btn btn-primary btn-sm">
+          <Icon name="calendar" />
+          <span>Book pemeriksaan</span>
         </a>
       </div>
     </nav>
@@ -399,105 +396,71 @@ const lasik = [
     <main id="top">
       <!-- ─── HERO ─── -->
       <section class="hero" aria-label="Hero">
-        <svg
-          class="hero__rings"
-          viewBox="0 0 800 800"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="1"
-          aria-hidden="true"
-        >
-          <circle cx="400" cy="400" r="380" />
-          <circle cx="400" cy="400" r="320" />
-          <circle cx="400" cy="400" r="260" />
-          <circle cx="400" cy="400" r="200" />
-          <circle cx="400" cy="400" r="140" />
-          <circle cx="400" cy="400" r="80" />
-        </svg>
         <div class="wrap hero__grid">
           <div>
-            <h1>
-              Mata Sehat,
-              <br />
-              Hidup Lebih <em>Jernih.</em>
-            </h1>
+            <h1>Penglihatan jernih, ditangani dokter spesialis mata</h1>
             <p class="hero__sub">
-              Layanan komprehensif: pemeriksaan rutin, Lasik, operasi katarak, treatment retina, kacamata anak hingga
-              lansia.
+              Pemeriksaan rutin, Lasik, operasi katarak, terapi retina, dan kacamata untuk anak hingga lansia, dalam
+              satu klinik.
             </p>
             <div class="cta-row">
               <a href="#booking" class="btn btn-primary">
-                <Icon name="calendar-blank" />
-                Book Pemeriksaan
+                <Icon name="calendar" />
+                Book pemeriksaan
               </a>
               <a href="#lasik" class="btn btn-ghost">
                 Konsultasi Lasik
               </a>
             </div>
-            <ul class="assure" aria-label="Fakta klinik">
-              <li>
-                <Icon name="check-circle" />
-                15+ Dokter Sp.M Bersertifikat
-              </li>
-              <li>
-                <Icon name="check-circle" />5 Cabang Jabodetabek
-              </li>
-              <li>
-                <Icon name="check-circle" />
-                BPJS & Asuransi Partner
-              </li>
-              <li>
-                <Icon name="check-circle" />
-                Teknologi Wavelight FS200 Lasik
-              </li>
-            </ul>
+            <dl class="facts num" aria-label="Fakta klinik">
+              <div>
+                <strong>15+</strong>
+                <span>Dokter Sp.M</span>
+              </div>
+              <div>
+                <strong>5</strong>
+                <span>Cabang</span>
+              </div>
+              <div>
+                <strong>2009</strong>
+                <span>Beroperasi sejak</span>
+              </div>
+              <div>
+                <strong>50.000+</strong>
+                <span>Pasien ditangani</span>
+              </div>
+            </dl>
           </div>
 
           <div class="hero__art">
             <Photo
-              id={6749706}
-              w={1000}
+              id={6749697}
+              w={900}
               eager
-              cls="a-main r-arch frame--ring frame--marks"
-              pos="50% 30%"
-              alt="Pasien menjalani pemeriksaan mata dengan slit lamp"
+              pos="60% 50%"
+              alt="Dokter memeriksa mata pasien dengan slit lamp di ruang periksa yang terang"
             />
-            <Photo
-              id={801867}
-              w={600}
-              eager
-              cls="a-circle r-circle frame--sticker"
-              alt="Close-up mata dengan iris cokelat keemasan"
-            />
-            <Photo
-              id={5215017}
-              w={500}
-              eager
-              cls="a-small r-tab frame--sticker"
-              pos="40% 30%"
-              alt="Dokter tersenyum memeriksa pasien"
-            />
-            <svg class="seal" viewBox="0 0 120 120" aria-hidden="true">
-              <defs>
-                <path id="seal-path" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0" />
-              </defs>
-              <text>
-                <textPath href="#seal-path" textLength="284" lengthAdjust="spacing">
-                  Spesialis Mata · Kemenkes RI · PERDAMI ·{' '}
-                </textPath>
-              </text>
-              <path d="M40,60 C48,50 72,50 80,60 C72,70 48,70 40,60Z" fill="none" stroke="currentColor" />
-              <circle cx="60" cy="60" r="4" fill="currentColor" />
-            </svg>
-            <div class="a-badge">
-              <Icon name="shield-check" />
-              <div>
-                <strong>Terpercaya sejak 2009</strong>
-                <span>Kemenkes RI · PERDAMI · 50.000+ pasien</span>
+            <div class="slotcard">
+              <div class="slotcard__top">
+                <Photo id={5327580} w={96} eager pos="50% 20%" alt="" />
+                <div>
+                  <p class="slotcard__label">Jadwal terdekat</p>
+                  <p class="slotcard__name">dr. Sari Wulandari, Sp.M</p>
+                </div>
+              </div>
+              <p class="slotcard__meta">
+                <Icon name="clock" />
+                Mata anak · Selasa, Kamis, Sabtu
+              </p>
+              <div class="slots num">
+                <a href="#booking">09:00</a>
+                <a href="#booking">10:30</a>
+                <a href="#booking">13:00</a>
               </div>
             </div>
           </div>
         </div>
+        <div class="ruler" aria-hidden="true"></div>
       </section>
 
       <!-- ─── INSURANCE ─── -->
@@ -514,32 +477,25 @@ const lasik = [
       </div>
 
       <!-- ─── KONDISI ─── -->
-      <section id="kondisi" class="sec on-pearl" aria-label="Kondisi mata yang ditangani">
+      <section id="kondisi" class="sec" aria-label="Kondisi mata yang ditangani">
         <div class="wrap cond">
           <div class="cond__art">
-            <Photo id={9929038} w={1000} almond cls="c-almond" alt="Close-up mata biru dengan cahaya lembut" />
-            <Photo
-              id={326536}
-              w={600}
-              cls="c-circle r-circle frame--sticker frame--ring frame--ring-l"
-              alt="Close-up mata dengan iris keemasan"
-            />
-            <Photo
-              id={4117653}
-              w={600}
-              cls="c-oval r-oval frame--sticker"
-              alt="Makro mata dengan iris cokelat oranye"
-            />
+            <Photo id={9929038} w={640} alt="Close-up mata biru dengan cahaya lembut" />
+            <div class="cond__pair">
+              <Photo id={326536} w={320} cls="ar-1" alt="Close-up mata dengan iris keemasan" />
+              <Photo id={4117653} w={320} cls="ar-1" alt="Makro mata dengan iris cokelat oranye" />
+            </div>
           </div>
           <div>
-            <h2>
-              Kondisi Mata Yang <em>Kami Tangani</em>
-            </h2>
-            <p class="lede">Dari refraksi ringan hingga kondisi retina kompleks — semua dalam satu klinik.</p>
+            <p class="kicker">Kondisi mata</p>
+            <h2>Dari refraksi ringan sampai retina kompleks</h2>
+            <p class="lede" style="margin-top: 16px">
+              Semua kondisi ini ditangani di satu klinik.
+            </p>
             <div class="cond__list">
               {conditions.map((condition) => (
                 <div class="cond__item">
-                  <Photo id={condition.img} w={200} cls="r-circle frame--ring" pos={condition.pos} alt="" />
+                  <Photo id={condition.img} w={112} pos={condition.pos} alt="" />
                   <h3>{condition.title}</h3>
                   <ul>
                     {condition.items.map((item) => (
@@ -554,18 +510,19 @@ const lasik = [
       </section>
 
       <!-- ─── LAYANAN ─── -->
-      <section id="layanan" class="sec on-white" aria-label="Layanan lengkap">
+      <section id="layanan" class="sec sec--card" aria-label="Layanan lengkap">
         <div class="wrap">
           <div class="head">
-            <h2>
-              Layanan <em>Lengkap</em>
-            </h2>
-            <p class="lede">Dari pemeriksaan rutin hingga prosedur bedah — semua dalam satu atap.</p>
+            <div>
+              <p class="kicker">Layanan</p>
+              <h2>Dari pemeriksaan rutin sampai prosedur bedah</h2>
+            </div>
+            <p class="lede">Semua layanan tersedia dalam satu atap, dengan harga indikatif di tiap layanan.</p>
           </div>
           <div class="svc">
             {services.map((service) => (
               <article class="svc__it">
-                <Photo id={service.img} w={640} cls={`${service.shape} frame--ring`} alt={service.alt} />
+                <Photo id={service.img} w={480} alt={service.alt} />
                 <h3>{service.title}</h3>
                 <ul>
                   {service.items.map((item) => (
@@ -580,43 +537,37 @@ const lasik = [
       </section>
 
       <!-- ─── LASIK ─── -->
-      <section id="lasik" class="sec on-navy" aria-label="Lasik & refractive surgery">
+      <section id="lasik" class="sec dark" aria-label="Lasik dan bedah refraktif">
         <div class="wrap">
           <div class="head">
-            <h2>
-              Bebas Kacamata <em>Dengan Lasik</em>
-            </h2>
-            <p class="lede">Teknologi Wavelight FS200 — blade-free, akurasi tinggi, recovery cepat.</p>
+            <div>
+              <p class="kicker">Lasik</p>
+              <h2>Bebas kacamata dengan Lasik</h2>
+            </div>
+            <p class="lede">Teknologi Wavelight FS200: tanpa pisau, akurasi tinggi, pemulihan cepat.</p>
           </div>
           <div class="lasik">
             <div class="lasik__art">
-              <svg class="l-rings" viewBox="0 0 400 400" fill="none" stroke="currentColor" aria-hidden="true">
-                <circle cx="200" cy="200" r="198" />
-                <circle cx="200" cy="200" r="178" />
-                <circle cx="200" cy="200" r="158" />
-              </svg>
-              <Photo
-                id={16571732}
-                w={900}
-                cls="l-main r-circle frame--sticker"
-                pos="45% 50%"
-                alt="Ruang tindakan klinik modern dengan tempat tidur pasien dan peralatan"
-              />
               <Photo
                 id={7580252}
-                w={500}
-                cls="l-small r-circle frame--sticker"
+                w={640}
                 pos="70% 40%"
-                alt="Dokter memeriksa mata pasien dengan penlight"
+                alt="Dokter memeriksa mata pasien dengan penlight sebelum prosedur"
+              />
+              <Photo
+                id={16571732}
+                w={640}
+                pos="45% 50%"
+                alt="Ruang tindakan klinik modern dengan tempat tidur pasien dan peralatan"
               />
             </div>
             <div>
               {lasik.map((tier) => (
                 <div class="tier">
-                  {tier.pop && <span class="tier__pop">Paling Populer</span>}
                   <div>
                     <h3>{tier.name}</h3>
                     <p class="tier__price num">{tier.price}</p>
+                    {tier.pop && <span class="tier__pop">Paling banyak dipilih</span>}
                   </div>
                   <ul>
                     {tier.items.map((item) => (
@@ -629,7 +580,7 @@ const lasik = [
                 </div>
               ))}
               <div class="diopter" role="img" aria-label="Rentang koreksi minus 1 sampai minus 10 dioptri">
-                <p class="diopter__cap">Rentang minus yang dapat dikoreksi (dioptri)</p>
+                <p class="diopter__cap">Rentang minus yang dapat dikoreksi, dalam dioptri</p>
                 <div class="diopter__scale num" aria-hidden="true">
                   {['-1', '-2', '-3', '-4', '-5', '-6', '-7', '-8', '-9', '-10'].map((value) => (
                     <span>{value}</span>
@@ -657,43 +608,38 @@ const lasik = [
                 </li>
                 <li>
                   <Icon name="check-circle" />
-                  Tidak ada kondisi kornea kontradiksi
+                  Tidak ada kondisi kornea yang menjadi kontraindikasi
                 </li>
               </ul>
             </div>
             <div class="lasik__cta">
               <a href="#booking" class="btn btn-primary">
-                Konsultasi Lasik Gratis
+                Konsultasi Lasik gratis
               </a>
-              <p>Termasuk Lasik eligibility test tanpa biaya</p>
+              <p>Termasuk tes kelayakan Lasik tanpa biaya</p>
             </div>
           </div>
         </div>
       </section>
 
       <!-- ─── DOKTER ─── -->
-      <section id="dokter" class="sec on-pearl" aria-label="Tim dokter spesialis">
+      <section id="dokter" class="sec" aria-label="Tim dokter spesialis">
         <div class="wrap">
           <div class="head">
-            <h2>
-              Tim Dokter <em>Spesialis Mata</em>
-            </h2>
+            <div>
+              <p class="kicker">Dokter</p>
+              <h2>Tim dokter spesialis mata</h2>
+            </div>
             <p class="lede">Semua bersertifikat Sp.M, beberapa dengan sub-spesialisasi lanjutan.</p>
           </div>
           <div class="docs">
             {doctors.map((doctor) => (
               <article class="doc">
-                <Photo
-                  id={doctor.img}
-                  w={560}
-                  cls="r-arch frame--ring"
-                  pos="50% 20%"
-                  alt={`${doctor.name} — foto ilustrasi`}
-                />
+                <Photo id={doctor.img} w={400} pos="50% 20%" alt={`${doctor.name}, foto ilustrasi`} />
                 <h3>{doctor.name}</h3>
                 <p class="doc__spec">{doctor.specialty}</p>
                 <p class="doc__sch">
-                  <Icon name="calendar-blank" />
+                  <Icon name="calendar" />
                   {doctor.schedule}
                 </p>
               </article>
@@ -703,7 +649,7 @@ const lasik = [
                 <Icon name="stethoscope" />
                 <p>Dan dokter Sp.M lainnya di 5 cabang</p>
               </div>
-              <a href="#booking" class="btn btn-outline btn-block">
+              <a href="#booking" class="btn btn-ghost btn-block">
                 Lihat jadwal
               </a>
             </article>
@@ -712,34 +658,25 @@ const lasik = [
       </section>
 
       <!-- ─── TEKNOLOGI ─── -->
-      <section class="sec on-white" aria-label="Teknologi alat medis">
+      <section class="sec sec--card" aria-label="Teknologi alat medis">
         <div class="wrap">
           <div class="head">
-            <h2>
-              Teknologi <em>Diagnostic & Surgical</em>
-            </h2>
-            <p class="lede">Peralatan medical-grade dari merek dunia untuk hasil terbaik.</p>
+            <div>
+              <p class="kicker">Teknologi</p>
+              <h2>Alat diagnostik dan bedah dari merek dunia</h2>
+            </div>
+            <p class="lede">Peralatan medical-grade untuk diagnosis yang akurat dan hasil yang bisa diulang.</p>
           </div>
           <div class="tech">
             <div class="tech__art">
+              <Photo id={35645517} w={720} alt="Ruang periksa klinik yang terang dengan peralatan medis" />
               <Photo
-                id={35645517}
-                w={900}
-                cls="t-main r-squircle frame--ring frame--marks"
-                alt="Ruang periksa klinik yang terang dengan peralatan medis"
+                id={5765827}
+                w={360}
+                pos="40% 50%"
+                alt="Dokter mengoperasikan autorefractor untuk mengukur refraksi pasien"
               />
-              <Photo
-                id={13697730}
-                w={500}
-                cls="t-oval r-oval frame--sticker"
-                alt="Instrumen bedah steril tertata di meja operasi"
-              />
-              <Photo
-                id={5619496}
-                w={500}
-                cls="t-circle r-circle frame--sticker"
-                alt="Ruang tindakan dengan kursi periksa dan unit peralatan"
-              />
+              <Photo id={5752254} w={360} alt="Pasien memeriksa penglihatan dengan phoropter modern" />
             </div>
             <div>
               {tech.map((device) => (
@@ -756,81 +693,64 @@ const lasik = [
       </section>
 
       <!-- ─── OPTICAL ─── -->
-      <section id="kacamata" class="sec on-indigo" aria-label="Optical Shop">
+      <section id="kacamata" class="sec" aria-label="Optical shop">
         <div class="wrap opt">
           <div>
-            <h2>
-              Optical Shop <em>In-Clinic</em>
-            </h2>
-            <p class="lede">
-              Setelah pemeriksaan, langsung fitting kacamata atau contact lens — no need ke optical lain.
+            <p class="kicker">Optical shop</p>
+            <h2>Kacamata dan lensa kontak, langsung setelah periksa</h2>
+            <p class="lede" style="margin-top: 16px">
+              Setelah pemeriksaan, fitting kacamata atau lensa kontak dilakukan di klinik yang sama.
             </p>
             <div class="opt__list">
               <div class="opt__it">
                 <Icon name="eyeglasses" />
-                <h3>Frame Collection</h3>
+                <h3>Koleksi frame</h3>
                 <ul>
                   <li>Frame premium: Ray-Ban, Oakley, Persol</li>
-                  <li>Frame affordable: brand lokal pilihan</li>
-                  <li>Frame anak (durable, fun design)</li>
-                  <li>Custom fitting oleh optometrist</li>
+                  <li>Frame terjangkau: brand lokal pilihan</li>
+                  <li>Frame anak yang kuat dan berwarna</li>
+                  <li>Fitting oleh optometris</li>
                 </ul>
               </div>
               <div class="opt__it">
-                <Icon name="circle-dashed" />
-                <h3>Lensa Premium</h3>
+                <Icon name="aperture" />
+                <h3>Lensa premium</h3>
                 <ul>
-                  <li>Zeiss (Jerman) — premium clarity</li>
-                  <li>Essilor (Prancis) — multifokal expertise</li>
-                  <li>Hoya (Jepang) — anti-reflective</li>
+                  <li>Zeiss (Jerman): ketajaman premium</li>
+                  <li>Essilor (Prancis): keahlian multifokal</li>
+                  <li>Hoya (Jepang): anti-reflektif</li>
                 </ul>
               </div>
               <div class="opt__it">
-                <Icon name="circles-three" />
-                <h3>Contact Lens</h3>
+                <Icon name="lens" />
+                <h3>Lensa kontak</h3>
                 <ul>
-                  <li>Soft daily, monthly</li>
+                  <li>Soft harian dan bulanan</li>
                   <li>Toric (silinder)</li>
-                  <li>Multifocal</li>
-                  <li>Color contact (medical-grade)</li>
-                  <li>Fitting & training included</li>
+                  <li>Multifokal</li>
+                  <li>Lensa kontak warna (medical-grade)</li>
+                  <li>Fitting dan pelatihan termasuk</li>
                 </ul>
               </div>
             </div>
           </div>
           <div class="opt__art">
-            <Photo
-              id={5766531}
-              w={900}
-              cls="o-arch r-arch frame--ring frame--marks"
-              pos="50% 35%"
-              alt="Perempuan memilih frame kacamata di toko optik"
-            />
-            <Photo
-              id={5201992}
-              w={600}
-              cls="o-circle r-circle frame--sticker"
-              alt="Tangan memegang frame kacamata hitam di depan rak frame"
-            />
-            <Photo
-              id={25096378}
-              w={500}
-              cls="o-squircle r-squircle frame--sticker"
-              alt="Beberapa kacamata berwarna di atas latar putih"
-            />
-            <Photo id={4952482} w={500} cls="o-oval r-oval frame--sticker" alt="Kacamata hitam dengan frame cokelat" />
+            <Photo id={5766531} w={720} pos="50% 35%" alt="Perempuan memilih frame kacamata di toko optik" />
+            <Photo id={5621834} w={360} alt="Ibu dan anak memilih frame kacamata di optical shop" />
+            <Photo id={5201992} w={360} alt="Tangan memegang frame kacamata hitam di depan rak frame" />
           </div>
         </div>
       </section>
 
       <!-- ─── PRICING ─── -->
-      <section class="sec on-pearl" aria-label="Referensi harga">
+      <section class="sec sec--card" aria-label="Referensi harga">
         <div class="wrap">
           <div class="head">
-            <h2>
-              Pricing <em>Reference</em>
-            </h2>
-            <p class="lede">Indikatif. Untuk BPJS & asuransi: cek koordinasi langsung dengan tim kami.</p>
+            <div>
+              <p class="kicker">Harga</p>
+              <h2>Referensi harga</h2>
+            </div>
+            <p class="lede">Indikatif. Untuk BPJS dan asuransi, koordinasikan langsung dengan tim kami.</p>
           </div>
           <div class="price">
             <table class="ptable">
@@ -852,30 +772,24 @@ const lasik = [
               </tbody>
             </table>
             <div class="price__side">
-              <Photo
-                id={5996744}
-                w={700}
-                cls="r-arch frame--ring"
-                pos="50% 50%"
-                alt="Kacamata di atas kartu tes ketajaman penglihatan"
-              />
+              <Photo id={5996744} w={560} alt="Kacamata di atas kartu tes ketajaman penglihatan" />
               <div class="bpjs">
                 <h3>Layanan BPJS Kesehatan</h3>
                 <ul>
                   <li>
                     <Icon name="check-circle" />
-                    Pemeriksaan & treatment dasar
+                    Pemeriksaan dan terapi dasar
                   </li>
                   <li>
                     <Icon name="check-circle" />
-                    Cataract surgery (IOL monofokal standar)
+                    Operasi katarak (IOL monofokal standar)
                   </li>
                   <li>
                     <Icon name="check-circle" />
-                    Glaukoma medication (formularium nasional)
+                    Obat glaukoma (formularium nasional)
                   </li>
                 </ul>
-                <p>* Perlu rujukan dari FKTP</p>
+                <p>Perlu rujukan dari FKTP</p>
               </div>
             </div>
           </div>
@@ -883,18 +797,19 @@ const lasik = [
       </section>
 
       <!-- ─── KAPAN PERIKSA ─── -->
-      <section class="sec on-white" aria-label="Kapan sebaiknya periksa mata">
+      <section class="sec" aria-label="Kapan sebaiknya periksa mata">
         <div class="wrap">
           <div class="head">
-            <h2>
-              Kapan Sebaiknya <em>Periksa Mata?</em>
-            </h2>
-            <p class="lede">Deteksi dini menyelamatkan penglihatan — untuk semua usia.</p>
+            <div>
+              <p class="kicker">Jadwal periksa</p>
+              <h2>Kapan sebaiknya periksa mata</h2>
+            </div>
+            <p class="lede">Deteksi dini menyelamatkan penglihatan, di segala usia.</p>
           </div>
           <div class="when">
             {when.map((age) => (
               <div class="when__it">
-                <Photo id={age.img} w={360} cls="r-circle frame--ring" alt={age.alt} />
+                <Photo id={age.img} w={480} alt={age.alt} pos="50% 30%" />
                 <h3>{age.title}</h3>
                 <p class="when__int">{age.interval}</p>
                 <p>{age.description}</p>
@@ -902,13 +817,12 @@ const lasik = [
             ))}
             <div class="when__it when__it--sos">
               <div class="when__sos">
-                <Icon name="warning-circle" />
+                <Icon name="warning" />
               </div>
-              <h3>Tanda Darurat</h3>
-              <p class="when__int">Segera Ke Dokter</p>
+              <h3>Tanda darurat</h3>
+              <p class="when__int">Segera ke dokter</p>
               <p>
-                Penglihatan tiba-tiba kabur, floater banyak baru muncul, flash of light, mata merah hebat — jangan
-                tunda.
+                Penglihatan tiba-tiba kabur, banyak floater baru, kilatan cahaya, atau mata merah hebat. Jangan tunda.
               </p>
             </div>
           </div>
@@ -916,82 +830,52 @@ const lasik = [
       </section>
 
       <!-- ─── GALERI ─── -->
-      <section class="sec on-pearl" aria-label="Suasana klinik">
+      <section class="sec sec--card" aria-label="Suasana klinik">
         <div class="wrap">
           <div class="head">
-            <h2>
-              Suasana <em>Klinik</em>
-            </h2>
+            <div>
+              <p class="kicker">Klinik</p>
+              <h2>Suasana klinik</h2>
+            </div>
             <p class="lede">Ruang periksa yang tenang, alat yang presisi, dan pendampingan yang ramah.</p>
           </div>
           <div class="gal">
+            <Photo id={8459996} w={720} cls="g1" alt="Ruang tunggu klinik yang terang dengan kursi biru" />
+            <Photo id={6749792} w={480} cls="g2" pos="40% 50%" alt="Dokter memeriksa mata anak dengan slit lamp" />
+            <Photo id={7108389} w={480} cls="g3" alt="Kursi periksa di ruang tindakan yang bersih" />
             <Photo
-              id={8459996}
-              w={900}
-              cls="g1 r-squircle frame--ring"
-              alt="Ruang tunggu klinik yang terang dengan kursi biru"
+              id={5201931}
+              w={720}
+              cls="g4"
+              pos="50% 35%"
+              alt="Perempuan mencoba kacamata di depan cermin optical shop"
             />
-            <Photo
-              id={5996608}
-              w={800}
-              cls="g2 r-circle frame--ring"
-              pos="55% 50%"
-              alt="Anak menjalani tes penglihatan dengan alat pemeriksaan mata"
-            />
-            <Photo
-              id={2017481}
-              w={600}
-              cls="g3 r-arch frame--ring"
-              alt="Close-up mata hijau dengan riasan warna-warni"
-            />
-            <Photo
-              id={3846022}
-              w={800}
-              cls="g4 r-circle frame--ring"
-              alt="Tangan memegang trial frame lensa untuk pemeriksaan refraksi"
-            />
-            <Photo
-              id={5201993}
-              w={900}
-              cls="g5 r-leaf frame--ring"
-              pos="30% 50%"
-              alt="Perempuan memilih kacamata di dinding frame"
-            />
-            <Photo
-              id={10113130}
-              w={700}
-              tone
-              cls="g6 r-tab frame--ring"
-              alt="Kacamata di atas permukaan merah muda dengan daun pakis dan jam weker"
-            />
+            <Photo id={5619496} w={480} cls="g5" alt="Ruang tindakan dengan kursi periksa dan unit peralatan" />
+            <Photo id={5996599} w={480} cls="g6" alt="Anak duduk di kursi periksa untuk tes penglihatan" />
+            <Photo id={7789603} w={480} cls="g7" pos="50% 60%" alt="Ruang periksa bersih dengan tempat tidur pasien" />
           </div>
         </div>
       </section>
 
       <!-- ─── TESTIMONI ─── -->
-      <section class="sec on-navy" aria-label="Testimoni pasien">
+      <section class="sec dark" aria-label="Testimoni pasien">
         <div class="wrap">
           <div class="testi__lead">
-            <Photo id={1047346} w={1000} almond cls="" alt="Close-up mata hitam putih dengan pantulan cahaya" />
+            <Photo id={6749710} w={640} alt="Dokter memeriksa pasien dengan slit lamp" />
             <div>
               <p class="testi__q">
-                "Pakai kacamata sejak SMP, sekarang 32 tahun. Akhirnya berani Lasik di Visi. dr. Andreas detail jelasin
-                syarat & risiko. 1 hari recovery, sekarang melihat dunia tanpa kacamata!"
+                "Pakai kacamata sejak SMP, sekarang 32 tahun. Akhirnya berani Lasik di Visi. dr. Andreas detail
+                menjelaskan syarat dan risiko. Pemulihan satu hari, sekarang saya melihat dunia tanpa kacamata."
               </p>
               <p class="testi__by">
-                — Reza, 32 tahun ·{' '}
-                <span class="tag" style="margin:0">
-                  Post-Femto LASIK
-                </span>
+                <span>Reza, 32 tahun</span>
+                <span class="tag">Pasca Femto-LASIK</span>
               </p>
             </div>
           </div>
           <div class="testi__grid">
             {testi.map((story) => (
               <figure class="testi__it">
-                <div class="mono" aria-hidden="true">
-                  {story.initial}
-                </div>
                 <blockquote>
                   <p>{story.quote}</p>
                 </blockquote>
@@ -1006,28 +890,15 @@ const lasik = [
       </section>
 
       <!-- ─── FAQ ─── -->
-      <section class="sec on-pearl" aria-label="Pertanyaan yang sering ditanyakan">
+      <section class="sec" aria-label="Pertanyaan yang sering ditanyakan">
         <div class="wrap faq">
           <div class="faq__art">
-            <Photo
-              id={19218034}
-              w={800}
-              cls="r-arch frame--ring frame--marks"
-              pos="50% 25%"
-              alt="Dokter tersenyum dengan jas lab dan stetoskop"
-            />
-            <Photo
-              id={4225880}
-              w={420}
-              cls="f-circle r-circle frame--sticker"
-              pos="50% 40%"
-              alt="Tenaga medis berjas lab memeriksa hasil rontgen"
-            />
+            <Photo id={19218034} w={560} pos="50% 25%" alt="Dokter tersenyum dengan jas lab dan stetoskop" />
+            <Photo id={5752287} w={560} pos="50% 30%" alt="Dokter memeriksa penglihatan pasien dengan phoropter" />
           </div>
           <div>
-            <h2>
-              Pertanyaan <em>Umum</em>
-            </h2>
+            <p class="kicker">FAQ</p>
+            <h2>Pertanyaan umum</h2>
             <div>
               {faq.map(([question, answer]) => (
                 <details name="faq">
@@ -1044,37 +915,22 @@ const lasik = [
       </section>
 
       <!-- ─── BOOKING ─── -->
-      <section id="booking" class="sec on-deep" aria-label="Form booking pemeriksaan">
+      <section id="booking" class="sec dark" aria-label="Form booking pemeriksaan">
         <div class="wrap book">
-          <div>
-            <div class="book__art">
-              <Photo
-                id={7789603}
-                w={900}
-                cls="r-arch frame--ring frame--marks"
-                pos="50% 60%"
-                alt="Ruang periksa bersih dengan tempat tidur pasien"
-              />
-              <Photo
-                id={18828741}
-                w={500}
-                cls="b-circle r-circle frame--sticker"
-                pos="50% 25%"
-                alt="Tenaga medis berkacamata tersenyum dengan stetoskop"
-              />
-            </div>
+          <div class="book__art">
+            <Photo id={7789603} w={560} pos="50% 60%" alt="Ruang periksa bersih dengan tempat tidur pasien" />
+            <Photo id={18828741} w={560} pos="50% 25%" alt="Tenaga medis berkacamata tersenyum dengan stetoskop" />
           </div>
           <div>
-            <h2>
-              Book Pemeriksaan <em>Mata</em>
-            </h2>
-            <p class="lede" style="margin-bottom: 32px;">
-              Pemeriksaan komprehensif 45–60 menit. Hasil & rekomendasi langsung dari dokter spesialis.
+            <p class="kicker">Booking</p>
+            <h2>Book pemeriksaan mata</h2>
+            <p class="lede">
+              Pemeriksaan komprehensif 45–60 menit. Hasil dan rekomendasi langsung dari dokter spesialis.
             </p>
             <form class="form" action="#" method="POST" novalidate aria-label="Form booking">
               <div class="form__row">
                 <div class="form__g">
-                  <label for="nama">Nama Lengkap</label>
+                  <label for="nama">Nama lengkap</label>
                   <input type="text" id="nama" name="nama" placeholder="Nama Anda" required autocomplete="name" />
                 </div>
                 <div class="form__g">
@@ -1093,12 +949,12 @@ const lasik = [
                     <option value="" disabled selected>
                       Pilih layanan
                     </option>
-                    <option value="general">General checkup</option>
+                    <option value="general">Pemeriksaan umum</option>
                     <option value="lasik">Konsultasi Lasik</option>
-                    <option value="katarak">Konsultasi Katarak</option>
+                    <option value="katarak">Konsultasi katarak</option>
                     <option value="glaucoma">Glaukoma</option>
-                    <option value="anak">Pediatric / Anak</option>
-                    <option value="dryeye">Dry Eye</option>
+                    <option value="anak">Mata anak</option>
+                    <option value="dryeye">Mata kering</option>
                     <option value="other">Lainnya</option>
                   </select>
                 </div>
@@ -1117,16 +973,19 @@ const lasik = [
                 </div>
               </div>
               <div class="form__g">
-                <label for="tanggal">Tanggal Preferensi</label>
+                <label for="tanggal">Tanggal preferensi</label>
                 <input type="date" id="tanggal" name="tanggal" />
               </div>
-              <button type="submit" class="btn btn-primary btn-block" style="margin-top: 6px;">
+              <button type="submit" class="btn btn-primary btn-block">
                 <Icon name="calendar-check" />
-                Book Sekarang
+                Book sekarang
               </button>
             </form>
             <p class="book__wa">
-              Atau chat langsung via <a href="https://wa.me/6282100000000">WhatsApp</a>
+              Atau chat langsung lewat{' '}
+              <a class="link" href="https://wa.me/6282100000000">
+                WhatsApp
+              </a>
             </p>
           </div>
         </div>
@@ -1139,7 +998,7 @@ const lasik = [
         <div class="foot__cities" aria-label="Cabang">
           {cities.map((city) => (
             <div class="city">
-              <Photo id={city.img} w={360} cls="r-circle frame--ring" alt={city.alt} />
+              <Photo id={city.img} w={360} alt={city.alt} />
               <p>{city.name}</p>
             </div>
           ))}
@@ -1149,16 +1008,16 @@ const lasik = [
             <p class="foot__brand">Visi Klinik Mata</p>
             <p class="foot__tag">See clearly. Live brightly.</p>
             <p class="foot__about">
-              Klinik mata spesialis dengan layanan komprehensif dari pemeriksaan rutin hingga bedah mata modern. 5
-              cabang Jabodetabek & Surabaya.
+              Klinik mata spesialis dengan layanan dari pemeriksaan rutin hingga bedah mata modern. 5 cabang Jabodetabek
+              dan Surabaya.
             </p>
             <div class="foot__soc">
               <a href="#" aria-label="Instagram Visi Klinik Mata">
-                <Icon name="instagram-logo" />
+                <Icon name="instagram" />
                 Instagram
               </a>
               <a href="#" aria-label="YouTube Visi Klinik Mata">
-                <Icon name="youtube-logo" />
+                <Icon name="youtube" />
                 YouTube
               </a>
             </div>
@@ -1166,21 +1025,11 @@ const lasik = [
           <div>
             <p class="foot__h">Lokasi</p>
             <ul>
-              <li>
-                <a href="#">Jakarta Selatan</a>
-              </li>
-              <li>
-                <a href="#">Jakarta Pusat</a>
-              </li>
-              <li>
-                <a href="#">BSD, Tangerang</a>
-              </li>
-              <li>
-                <a href="#">Bekasi</a>
-              </li>
-              <li>
-                <a href="#">Surabaya</a>
-              </li>
+              {cities.map((city) => (
+                <li>
+                  <a href="#">{city.name}</a>
+                </li>
+              ))}
             </ul>
             <p class="foot__hrs">
               Senin–Sabtu: 08:00–20:00
@@ -1204,13 +1053,13 @@ const lasik = [
                 <a href="#layanan">Glaukoma</a>
               </li>
               <li>
-                <a href="#layanan">Dry Eye</a>
+                <a href="#layanan">Mata kering</a>
               </li>
               <li>
-                <a href="#layanan">Pediatric</a>
+                <a href="#layanan">Mata anak</a>
               </li>
               <li>
-                <a href="#kacamata">Optical Shop</a>
+                <a href="#kacamata">Optical shop</a>
               </li>
             </ul>
           </div>
@@ -1218,22 +1067,22 @@ const lasik = [
             <p class="foot__h">Informasi</p>
             <ul>
               <li>
-                <a href="#dokter">Tim Dokter</a>
+                <a href="#dokter">Tim dokter</a>
               </li>
               <li>
-                <a href="#kondisi">Kondisi Mata</a>
+                <a href="#kondisi">Kondisi mata</a>
               </li>
               <li>
-                <a href="#">BPJS & Asuransi</a>
+                <a href="#">BPJS dan asuransi</a>
               </li>
               <li>
-                <a href="#booking">Book Pemeriksaan</a>
+                <a href="#booking">Book pemeriksaan</a>
               </li>
               <li>
-                <a href="#">Tentang Kami</a>
+                <a href="#">Tentang kami</a>
               </li>
               <li>
-                <a href="#">Karir</a>
+                <a href="#">Karier</a>
               </li>
             </ul>
           </div>
@@ -1243,7 +1092,7 @@ const lasik = [
           <div class="foot__certs">
             <span>Kemenkes RI</span>
             <span>PERDAMI</span>
-            <span>JCI Accredited</span>
+            <span>JCI</span>
           </div>
         </div>
       </div>
