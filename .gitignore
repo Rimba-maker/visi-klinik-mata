@@ -29,5 +29,4 @@ Thumbs.db
 
 # Local tooling state
 .claude/*
-!.claude/skills/
 .impeccable/
